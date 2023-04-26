@@ -1,12 +1,8 @@
 import Head from "next/head";
 import { Fragment } from "react";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
-import Header from "@/components/layout/Header";
+import { Poppins } from "next/font/google";
 import MainComponentBio from "@/components/MainComponentBio";
 import MainComponentDetail from "@/components/MainComponentDetail";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -15,7 +11,6 @@ export default function Home() {
         <title>Bárdos Richárd</title>
         <meta name="description" content="Bemutatkozó weboldalam" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge"></meta>
         <link rel="icon" href="/man.ico" />
         <link href="/dist/output.css" rel="stylesheet" />
       </Head>
@@ -27,7 +22,7 @@ export default function Home() {
       >
         <div
           id="profile"
-          className="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0"
+          className="max-w-5xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0"
         >
           <MainComponentBio />
           <MainComponentDetail />
