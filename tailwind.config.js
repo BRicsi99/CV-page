@@ -13,6 +13,9 @@ module.exports = {
       height: {
         '128': '32rem',
         '144': '36rem',
+      },
+      colors: {
+        'light-green': '#78cc6d',
       }
     }
   },
