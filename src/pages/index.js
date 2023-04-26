@@ -19,21 +19,19 @@ export default function Home() {
         <link rel="icon" href="/man.ico" />
         <link href="/dist/output.css" rel="stylesheet" />
       </Head>
-      <main>
-        <body
-          className="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover"
-          style={{
-            backgroundImage: `url(https://source.unsplash.com/1L71sPT5XKc)`,
-          }}
+      <main
+        className="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover"
+        style={{
+          backgroundImage: `url(https://source.unsplash.com/1L71sPT5XKc)`,
+        }}
+      >
+        <div
+          id="profile"
+          className="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0"
         >
-          <div
-            id="profile"
-            className="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0"
-          >
-            <MainComponentBio />
-            <MainComponentDetail />
-          </div>
-        </body>
+          <MainComponentBio />
+          <MainComponentDetail />
+        </div>
       </main>
     </Fragment>
   );
