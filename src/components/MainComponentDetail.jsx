@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import AboutMe from "./slides/AboutMe";
+import PageContext from "@/context/PageSwitcherContext";
+import Resume from "./slides/Resume";
 
 function MainComponentDetail() {
+  const {currentPage} = useContext(PageContext)
+
   return (
     <div
       id="profile"
@@ -15,7 +19,8 @@ function MainComponentDetail() {
           }}
         ></div>
 
-        <AboutMe/>
+        {currentPage.currentPage === 'AboutMe.jsx' && <AboutMe/>}
+        {currentPage.currentPage === 'Resume.jsx' && <Resume/>}
       </div>
     </div>
   );

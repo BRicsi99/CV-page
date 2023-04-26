@@ -11,8 +11,6 @@ export default function Home() {
         <title>Bárdos Richárd</title>
         <meta name="description" content="Bemutatkozó weboldalam" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/man.ico" />
-        <link href="/dist/output.css" rel="stylesheet" />
       </Head>
       <main
         className="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover"

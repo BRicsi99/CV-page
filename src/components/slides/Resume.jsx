@@ -1,10 +1,10 @@
 import React from "react";
 import { FaReact, FaQuoteLeft } from "react-icons/fa";
 
-function AboutMe() {
+function Resume() {
   return (
     <div>
-      <h1 className="text-2xl font-bold pt-8 lg:pt-0">Rólam</h1>
+      <h1 className="text-2xl font-bold pt-8 lg:pt-0">Resume</h1>
       <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
       <div className="flex gap-x-10 pt-4 mb-10">
         <div className="w-1/2">
@@ -107,31 +107,16 @@ function AboutMe() {
       <figure className="max-w-screen-md mx-auto text-center">
         <FaQuoteLeft className="w-12 h-10 mx-auto mb-3 text-gray-400 dark:text-gray-600 pt-3" />
         <blockquote>
-          <p className="text-1xl italic font-medium text-gray-900 dark:text-white">
+          <p class="text-1xl italic font-medium text-gray-900 dark:text-white">
             "There are 3 ways to make a living in this business: <br /> Be
             first, Be smarter, Or cheat.
             <br />
             But, I don't cheat!"
           </p>
         </blockquote>
-        <figcaption className="flex items-center justify-center mt-6 space-x-3">
-          <img
-          className="w-6 h-6 rounded-full"
-            src="images/JeremyIrons.jpg"
-            alt="Jeremy Irons picture"
-          />
-          <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-            <cite className="pr-3 font-medium text-gray-900 dark:text-white">
-              Jeremy Irons
-            </cite>
-            <cite className="pl-3 text-sm text-gray-500 dark:text-gray-400">
-              Margin Call
-            </cite>
-          </div>
-        </figcaption>
       </figure>
     </div>
   );
 }
 
-export default AboutMe;
+export default Resume;
