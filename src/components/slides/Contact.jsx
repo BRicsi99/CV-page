@@ -1,5 +1,4 @@
 import React from "react";
-import { TiTick } from "react-icons/ti";
 import { BsFillEnvelopeFill, BsFillPersonFill, BsFillTelephoneFill } from "react-icons/bs";
 import { FiMapPin } from "react-icons/fi";
 import { MdEventAvailable } from "react-icons/md";
