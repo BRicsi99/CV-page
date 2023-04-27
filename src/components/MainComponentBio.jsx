@@ -18,7 +18,7 @@ function MainComponentBio() {
           className="rounded-none lg:rounded-t-lg shadow-2xl hidden lg:block"
         />
         <div>
-          <h1 className="text-3xl pt-8 lg:pt-0 mt-5 text-center">
+          <h1 className="text-3xl pt-8 lg:pt-0 mt-5 text-center fade-in-out">
             Bárdos Richárd
           </h1>
           <p className="text-1xl pt-8 lg:pt-0 my-3 text-center text-light-green font-medium">
