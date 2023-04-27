@@ -4,7 +4,7 @@ import { FaReact, FaQuoteLeft } from "react-icons/fa";
 function AboutMe() {
   return (
     <div>
-      <h1 className="text-2xl font-bold pt-8 lg:pt-0">Rólam</h1>
+      <h1 className="text-3xl font-bold pt-8 lg:pt-0 text-light-green">Rólam</h1>
       <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
       <div className="flex gap-x-10 pt-4 mb-10">
         <div className="w-1/2">
@@ -16,7 +16,7 @@ function AboutMe() {
           </p>
         </div>
         <div className="w-1/2 flex flex-wrap">
-          <div className="w-1/2 text-center h-0 font-bold">Kor</div>
+          <p className="w-1/2 text-center h-0 font-bold">Kor</p>
           <p className="w-1/2 text-center h-0">23</p>
 
           <p className="w-1/2 text-center h-0 font-bold">Származás</p>
@@ -36,7 +36,7 @@ function AboutMe() {
       <div className="flex pt-4 flex-wrap flex-row">
         <div className="w-1/2 text-center px-3 pb-5">
           <div className="rounded-full bg-light-green p-3 w-14 m-auto">
-            <FaReact size="2rem" className="h-auto text-gray-600 text-white" />
+            <FaReact size="2rem" className="h-auto text-white" />
           </div>
           <h3 className="text-lg font-semibold">React.js & Next.js</h3>
           <p>Egyedi weboldalak fejlesztése</p>
@@ -44,7 +44,7 @@ function AboutMe() {
 
         <div className="w-1/2 text-center px-3 pb-5">
           <div className="rounded-full bg-light-green p-3 w-14 m-auto">
-            <FaReact size="2rem" className="h-auto text-gray-600 text-white" />
+            <FaReact size="2rem" className="h-auto text-white" />
           </div>
           <h3 className="text-lg font-semibold">React.js & Next.js</h3>
           <p>Egyedi weboldalak fejlesztése</p>
@@ -52,7 +52,7 @@ function AboutMe() {
 
         <div className="w-1/2 text-center px-3 pb-5">
           <div className="rounded-full bg-light-green p-3 w-14 m-auto">
-            <FaReact size="2rem" className="h-auto text-gray-600 text-white" />
+            <FaReact size="2rem" className="h-auto text-white" />
           </div>
           <h3 className="text-lg font-semibold">React.js & Next.js</h3>
           <p>Egyedi weboldalak fejlesztése</p>
@@ -60,7 +60,7 @@ function AboutMe() {
 
         <div className="w-1/2 text-center px-3 pb-5">
           <div className="rounded-full bg-light-green p-3 w-14 m-auto">
-            <FaReact size="2rem" className="h-auto text-gray-600 text-white" />
+            <FaReact size="2rem" className="h-auto text-white" />
           </div>
           <h3 className="text-lg font-semibold">React.js & Next.js</h3>
           <p>Egyedi weboldalak fejlesztése</p>
@@ -80,21 +80,21 @@ function AboutMe() {
         </div>
         <div className="w-1/4 rounded-lg bg-light-green p-3 w-24 m-auto">
           <img
-            src="images/wired-lineal-1764-pushups.gif"
+            src="images/music-album.gif"
             className="h-auto"
             size="2rem"
           />
         </div>
         <div className="w-1/4 rounded-lg bg-light-green p-3 w-24 m-auto">
           <img
-            src="images/wired-lineal-1764-pushups.gif"
+            src="images/palmtree.gif"
             className="h-auto"
             size="2rem"
           />
         </div>
         <div className="w-1/4 rounded-lg bg-light-green p-3 w-24 m-auto">
           <img
-            src="images/wired-lineal-1764-pushups.gif"
+            src="images/consultation.gif"
             className="h-auto"
             size="2rem"
           />
