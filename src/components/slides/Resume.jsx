@@ -1,5 +1,4 @@
 import React from "react";
-import { FaReact, FaQuoteLeft } from "react-icons/fa";
 import { TiTick } from "react-icons/ti";
 
 function Resume() {
