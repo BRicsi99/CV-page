@@ -5,26 +5,67 @@ import PopUpContext from "../../context/PopUpContext";
 const works = [
   {
     id: 1,
-    name: "React - House Marketplace",
-    image: "images/JeremyIrons.jpg",
+    name: "House Marketplace",
+    image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg",
     progress: true,
-    tech: "react",
+    url: "https://react-house-marketplace-six.vercel.app/",
+    gitlab: "https://gitlab.com/bardosrichard99/react-house-marketplace",
   },
   {
-    id: 1,
-    name: "React - House Marketplace",
-    image: "images/JeremyIrons.jpg",
-    progress: true,
+    id: 2,
+    name: "Github Finder",
+    image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg",
+    progress: false,
+    url: "https://react-github-finder-alpha-murex.vercel.app/",
+    gitlab: "https://gitlab.com/bardosrichard99/react-github-finder",
+  },
+  {
+    id: 3,
+    name: "Feedback UI",
+    image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg",
+    progress: false,
+    url: "https://react-feedback-ui-pi.vercel.app/",
+    gitlab: "https://gitlab.com/bardosrichard99/react-feedback-ui",
+  },
+  {
+    id: 4,
+    name: "Food Order Page 2.0",
+    image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg",
+    progress: false,
+    url: "https://react-food-order-page-2-0.vercel.app/",
+    gitlab: "https://gitlab.com/bardosrichard99/react-food-order-page-2.0",
+  },
+  {
+    id: 5,
+    name: "Redux authentication",
+    image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg",
+    progress: false,
+    url: "https://react-redux-authentication.vercel.app/",
+    gitlab: "https://gitlab.com/bardosrichard99/react-redux-authentication",
+  },
+  {
+    id: 6,
+    name: "Typescript Todo",
+    image: "https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg",
+    progress: false,
+    url: "https://react-typescript-todo-eight.vercel.app/",
+    gitlab: "https://gitlab.com/bardosrichard99/react-typescript-todo",
   },
 ];
 
 function Works() {
-
   const { setVisible } = useContext(PopUpContext);
 
-  const onSetVisible = (e) =>{
-    setVisible(e.target.src)
-  }
+  const onSetVisible = (e) => {
+    const item = works.find(
+      (item) => item.id.toString() === e.currentTarget.id
+    );
+    if (window.event.ctrlKey) {
+      console.log("ctrl was held down during the click");
+    } else {
+      setVisible(item.image, item.name);
+    }
+  };
 
   return (
     <div>
@@ -35,65 +76,40 @@ function Works() {
 
       <div className="grid grid-cols-2 md:grid-cols-2 gap-4 mt-6">
         <div className="grid gap-4">
-          <div>
-            <img
-            className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
-              alt=""
-              onClick={onSetVisible}
-            />
-          </div>
-          <div>
-            <img
-            className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-            className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
-              alt=""
-            />
-          </div>
+          {works.slice(0, Math.ceil(works.length / 2)).map((item) => (
+            <div key={item.id}>
+              <img
+                id={item.id}
+                className="h-auto max-w-full rounded-lg"
+                src={item.image}
+                alt={item.name}
+                onClick={onSetVisible}
+              />
+            </div>
+          ))}
         </div>
         <div className="grid gap-4">
-          <div>
-            <img
-            className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-            className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg"
-              alt=""
-            />
-          </div>
-          <div>
-            <img
-            className="h-auto max-w-full rounded-lg"
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
-              alt=""
-            />
-          </div>
+          {works.slice(Math.ceil(works.length / 2)).map((item) => (
+            <div key={item.id}>
+              <img
+                id={item.id}
+                className="h-auto max-w-full rounded-lg"
+                src={item.image}
+                alt={item.name}
+                onClick={onSetVisible}
+              />
+            </div>
+          ))}
         </div>
       </div>
 
-      <h1 className="text-3xl font-bold pt-8 lg:pt-0 text-light-green">
-        Írj nekem
-      </h1>
-
-      <div className="mb-10">
+      <div className="my-10">
         <button
           type="button"
           className="relative inline-flex items-center text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         >
           <img
-          className="h-auto max-w-full rounded-lg"
+            className="h-auto max-w-full rounded-lg"
             src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg"
             alt=""
           />
@@ -102,68 +118,6 @@ function Works() {
             <FaReact size="1.5rem" />
           </div>
         </button>
-      </div>
-      <div className="mb-10">
-        <button
-          data-modal-target="defaultModal"
-          data-modal-toggle="defaultModal"
-          className="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          type="button"
-        >
-          Toggle modal
-        </button>
-
-        <div
-          id="defaultModal"
-          tabIndex="-1"
-          aria-hidden="true"
-          className="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
-        >
-          <div className="relative w-full max-w-2xl max-h-full">
-            <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
-              <div className="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-                  Terms of Service
-                </h3>
-                <button
-                  type="button"
-                  className="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
-                  data-modal-hide="defaultModal"
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="w-5 h-5"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    ></path>
-                  </svg>
-                  <span className="sr-only">Close modal</span>
-                </button>
-              </div>
-              <div className="p-6 space-y-6">
-                <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                  With less than a month to go before the European Union enacts
-                  new consumer privacy laws for its citizens, companies around
-                  the world are updating their terms of service agreements to
-                  comply.
-                </p>
-                <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                  The European Union’s General Data Protection Regulation
-                  (G.D.P.R.) goes into effect on May 25 and is meant to ensure a
-                  common set of data rights in the European Union. It requires
-                  organizations to notify users as soon as possible of high-risk
-                  data breaches that could personally affect them.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );

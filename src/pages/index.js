@@ -10,7 +10,7 @@ import PopUpContext from "@/context/PopUpContext";
 
 export default function Home() {
 
-  const {src} = useContext(PopUpContext)
+  const {status} = useContext(PopUpContext)
 
   return (
     <Fragment>
@@ -33,7 +33,7 @@ export default function Home() {
           <MainComponentBio />
           <MainComponentDetail />
 
-          <div className={`${src.src !== null ? '' : 'hidden'}`}>
+          <div className={`${status ? '' : 'hidden'}`}>
             <PopUp/>
           </div>
         </div>
