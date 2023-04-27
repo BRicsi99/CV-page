@@ -10,11 +10,10 @@ function SideBar() {
 
   const onPageChange = (e) => {
     setPage(e.currentTarget.id);
-    console.log(e.currentTarget.id);
   };
 
   return (
-    <div className="w-1/12 text-white p-2">
+    <div className="w-1/12 text-white p-2 h-144">
       <div className="flex pt-4 pb-4 flex-col content-start text-center">
         <div
           id="AboutMe.jsx"

@@ -8,7 +8,6 @@ function MainComponentBio() {
 
   const onPageChange = (e) =>{
     setPage(e.currentTarget.id)
-    console.log(e.currentTarget.id);
   }
 
   return (
@@ -26,7 +25,7 @@ function MainComponentBio() {
             Frontend Fejlesztő
           </p>
 
-          <div className="mt-5 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-center gap-7">
+          <div className="mt-7 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-center gap-7">
             <a className="link" href="https://github.com/BRicsi99">
               <FaGithub
                 size="2rem"
@@ -50,17 +49,20 @@ function MainComponentBio() {
             </a>
           </div>
 
-          <div className="mt-5 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-center gap-7">
+          <div className="mt-14 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-center gap-7">
             <button
               id="AboutMe.jsx"
-              onClick={onPageChange}
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href='/files/RichardBardos_CV_en_202303.pdf';
+                }}
               className="relative inline-flex p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800"
             >
               <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                 CV Letöltése
               </span>
             </button>
-            <button id="Resume.jsx" onClick={onPageChange} className="relative inline-flex p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800">
+            <button id="Contact.jsx" onClick={onPageChange} className="relative inline-flex p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800">
               <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
                 Kapcsolat
               </span>
