@@ -3,6 +3,7 @@ import { Fragment } from "react";
 import { Poppins } from "next/font/google";
 import MainComponentBio from "@/components/MainComponentBio";
 import MainComponentDetail from "@/components/MainComponentDetail";
+import SideBar from "@/components/SideBar";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
           id="profile"
           className="max-w-5xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0"
         >
+          <SideBar/>
           <MainComponentBio />
           <MainComponentDetail />
         </div>

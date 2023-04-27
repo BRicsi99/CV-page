@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiFillGitlab } from "react-icons/ai";
 import PageContext from "@/context/PageSwitcherContext";
@@ -13,7 +13,7 @@ function MainComponentBio() {
 
   return (
     <>
-      <div className="h-144 w-full lg:w-2/5 bg-white lg:rounded-lg">
+      <div className="h-144 w-full lg:w-4/12 bg-white lg:rounded-lg">
         <img
           src="images/DSC_5579_resized2.jpg"
           className="rounded-none lg:rounded-t-lg shadow-2xl hidden lg:block"
