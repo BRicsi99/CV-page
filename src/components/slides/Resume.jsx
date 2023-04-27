@@ -80,26 +80,26 @@ function Resume() {
           <div className="w-full">
             <hr className="my-5 w-1/2 border-light-green opacity-25" />
             <div className="mb-1 text-base font-medium">HTML & CSS</div>
-            <div class="w-full bg-gray-200 rounded-full h-1.5 mb-4">
-              <div class="w-full bg-light-green h-1.5 rounded-full"></div>
+            <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4">
+              <div className="w-full bg-light-green h-1.5 rounded-full"></div>
             </div>
             <div className="mb-1 text-base font-medium">C#</div>
-            <div class="w-full bg-gray-200 rounded-full h-1.5 mb-4">
-              <div class="w-7/12 bg-light-green h-1.5 rounded-full"></div>
+            <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4">
+              <div className="w-7/12 bg-light-green h-1.5 rounded-full"></div>
             </div>
             <div className="mb-1 text-base font-medium">
               JavaScript & Typescript
             </div>
-            <div class="w-full bg-gray-200 rounded-full h-1.5 mb-4">
-              <div class="w-10/12 bg-light-green h-1.5 rounded-full"></div>
+            <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4">
+              <div className="w-10/12 bg-light-green h-1.5 rounded-full"></div>
             </div>
             <div className="mb-1 text-base font-medium">React.js & Next.js</div>
-            <div class="w-full bg-gray-200 rounded-full h-1.5 mb-4">
-              <div class="w-5/12 bg-light-green h-1.5 rounded-full"></div>
+            <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4">
+              <div className="w-5/12 bg-light-green h-1.5 rounded-full"></div>
             </div>
             <div className="mb-1 text-base font-medium">Python & R</div>
-            <div class="w-full bg-gray-200 rounded-full h-1.5 mb-4">
-              <div class="w-6/12 bg-light-green h-1.5 rounded-full"></div>
+            <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4">
+              <div className="w-6/12 bg-light-green h-1.5 rounded-full"></div>
             </div>
           </div>
         </div>
@@ -152,12 +152,12 @@ function Resume() {
           <div className="w-full">
             <hr className="my-5 w-1/2 border-light-green opacity-25" />
             <div className="mb-1 text-base font-medium">Magyar</div>
-            <div class="w-full bg-gray-200 rounded-full h-1.5 mb-4">
-              <div class="w-full bg-light-green h-1.5 rounded-full"></div>
+            <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4">
+              <div className="w-full bg-light-green h-1.5 rounded-full"></div>
             </div>
             <div className="mb-1 text-base font-medium">Angol</div>
-            <div class="w-full bg-gray-200 rounded-full h-1.5 mb-4">
-              <div class="w-8/12 bg-light-green h-1.5 rounded-full"></div>
+            <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4">
+              <div className="w-8/12 bg-light-green h-1.5 rounded-full"></div>
             </div>
           </div>
         </div>
