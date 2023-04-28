@@ -12,7 +12,7 @@ function MainComponentBio() {
 
   return (
     <>
-      <div className="h-144 w-full lg:w-4/12 bg-white lg:rounded-lg">
+      <div className="h-144 tel:hidden lg:w-4/12 bg-white lg:rounded-lg">
         <img
           src="images/DSC_5579_resized2.jpg"
           className="rounded-none lg:rounded-t-lg shadow-2xl hidden lg:block"

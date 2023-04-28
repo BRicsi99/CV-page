@@ -20,6 +20,10 @@ module.exports = {
       },
       maxHeight: {
         '8/10': '90vh',
+      },
+      screens: {
+        'tel': {'max': '1023px'},
+        // => @media (max-width: 1023px) { ... }
       }
     }
   },

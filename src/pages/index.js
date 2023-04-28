@@ -20,14 +20,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main
-        className="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover"
+        className="font-sans antialiased h-screen text-gray-900 leading-normal tracking-wider bg-cover"
         style={{
           backgroundImage: `url(https://source.unsplash.com/1L71sPT5XKc)`,
         }}
       >
         <div
           id="profile"
-          className="max-w-5xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0"
+          className="max-w-5xl flex lg:items-center h-screen flex-wrap mx-auto lg:my-0"
         >
           <SideBar />
           <MainComponentBio />
