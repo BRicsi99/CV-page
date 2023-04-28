@@ -13,8 +13,8 @@ function PopUp() {
       id="modal"
       className="fixed top-0 left-0 z-80 w-screen h-screen bg-black/70 flex justify-center items-center"
     >
-      <div className="relative w-5/6 max-h-8/10 max-w-5/6 bg-white rounded-lg shadow dark:bg-gray-700">
-        <div className="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+      <div className="tel:flex tel:flex-wrap relative lg:w-5/6 tel:w-11/12 max-h-8/10 lg:max-w-5/6 tel:max-w-11/12 bg-white rounded-lg shadow dark:bg-gray-700">
+        <div className="flex tel:w-full items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
           <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
             {title}
           </h3>
@@ -28,56 +28,65 @@ function PopUp() {
             <span className="sr-only">Close modal</span>
           </button>
         </div>
-        <div className="flex p-6">
-          <div className="w-1/2 pr-2 h-144">
+
+        <div className="flex tel:flex-wrap tel:w-full lg:p-6 tel:p-3">
+          <div className="lg:w-1/2 tel:w-full lg:pr-2 tel:px-10 tel:pb-3 lg:h-144">
             <a href={url} target="_blank">
               <img
                 id="modal-img"
                 src={src}
-                className="object-cover object-top h-full w-full rounded-md border shadow"
+                className="object-cover object-top lg:h-full w-full rounded-md border shadow"
               />
             </a>
           </div>
 
-          <div className="w-1/2 pl-2">
-            <div className="mb-2 h-full p-6 rounded-md card bg-white border border-gray-200 hover:bg-light-green-250 shadow text-black">
-              <div className="">
-                <h3 className="mb-2 text-2xl font-semibold">{title}</h3>
+          <div className="lg:w-1/2 tel:w-full lg:pl-2">
+            <div className="mb-2 h-full lg:p-6 tel:p-3 rounded-md card bg-white border border-gray-200 hover:bg-light-green-250 shadow text-black">
+              <div>
+                <h3 className="lg:mb-2 lg:text-2xl tel:text-xl font-semibold">
+                  {title}
+                </h3>
                 <div className="mx-auto lg:mx-0 w-4/5 my-5 border-b-2 border-green-500 opacity-25"></div>
-                <p className="mb-3 text-lg text-gray-400">
-                  {
-                    "DescriptionDescription Description Description Description Description"
-                  }
+                <p className="mb-3 lg:text-lg tel:text-medium text-gray-400">
+                  {"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
                 </p>
-                <div className="flex gap-5 my-3">
-                  <a className="link cursor-pointer" href={url} target="_blank">
-                    <FaLink
-                      size="1.7rem"
-                      className="h-10 fill-current text-gray-600 hover:text-green-700"
-                    />
-                  </a>
-                  <a
-                    className="link cursor-pointer"
-                    href={gitlab}
-                    target="_blank"
-                  >
-                    <AiFillGitlab
-                      size="2rem"
-                      className="h-10 fill-current text-gray-600 hover:text-green-700"
-                    />
-                  </a>
-                </div>
-
-                <div className="flex">
-                  <div className="mr-3">
-                    <span className="bg-orange-100 text-orange-800 text-xs font-medium mr-2 px-2.5 py-1 rounded-full dark:bg-green-900 dark:text-green-300">
-                      {progress ? "Folyamatban" : "Kész"}
-                    </span>
+                <div className="tel:flex">
+                  <div className="tel:w-1/2 flex gap-5 my-3 tel:justify-center">
+                    <a
+                      className="link cursor-pointer"
+                      href={url}
+                      target="_blank"
+                    >
+                      <FaLink
+                        size="1.7rem"
+                        className="h-10 fill-current text-gray-600 hover:text-green-700"
+                      />
+                    </a>
+                    <a
+                      className="link cursor-pointer"
+                      href={gitlab}
+                      target="_blank"
+                    >
+                      <AiFillGitlab
+                        size="2rem"
+                        className="h-10 fill-current text-gray-600 hover:text-green-700"
+                      />
+                    </a>
                   </div>
-                  <span className="pt-1 flex w-14 bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">
-                    <FaEye size="1.1rem" className="mr-2" />
-                    {4}
-                  </span>
+
+                  <div className="tel:w-1/2 flex tel:flex-wrap tel:gap-y-4 tel:content-center">
+                    <div className="lg:mr-3 tel:w-1/2 tel:text-center">
+                      <span className="bg-orange-100 text-orange-800 text-xs font-medium lg:mr-2 px-2.5 py-1 rounded-full dark:bg-green-900 dark:text-green-300">
+                        {progress ? "Folyamatban" : "Kész"}
+                      </span>
+                    </div>
+                    <div className="tel:w-1/2 tel:justify-center">
+                      <span className="pt-1 flex w-14 bg-blue-100 text-blue-800 text-xs font-medium lg:mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">
+                        <FaEye size="1.1rem" className="mr-2 " />
+                        {4}
+                      </span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

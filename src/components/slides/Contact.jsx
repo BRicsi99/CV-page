@@ -21,17 +21,17 @@ function Contact() {
       <div className="flex mb-10 pt-4">
         <div className="w-1/2 pt-4 pr-6 border-r-4 border-light-green-250">
           <div className="w-full">
-            <div className="flex mb-6">
-              <FiMapPin size="1.5rem" className="h-auto text-light-green" />
-              <span className="font-medium text-gray-600 pl-4">
+            <div className="flex mb-6 tel:flex-wrap">
+              <FiMapPin size="1.5rem" className="tel:w-full lg:h-auto text-light-green" />
+              <span className=" tel:w-full font-medium tel:text-sm text-gray-600 lg:pl-4">
                 Budapest, HUN
               </span>
             </div>
           </div>
           <div className="w-full">
-            <div className="flex mb-6">
-              <BsFillTelephoneFill size="1.5rem" className="h-auto text-light-green" />
-              <span className="font-medium text-gray-600 pl-4">
+            <div className="flex mb-6 tel:flex-wrap">
+              <BsFillTelephoneFill size="1.5rem" className="tel:w-full lg:h-auto text-light-green" />
+              <span className=" tel:w-full font-medium tel:text-sm text-gray-600 lg:pl-4">
                 +36309710372
               </span>
             </div>
@@ -40,17 +40,17 @@ function Contact() {
 
         <div className="w-1/2 pt-4 pl-6">
           <div className="w-full">
-            <div className="flex mb-6">
-              <BsFillEnvelopeFill size="1.5rem" className="h-auto text-light-green" />
-              <span className="font-medium text-gray-600 pl-4">
+            <div className="flex mb-6 tel:flex-wrap">
+              <BsFillEnvelopeFill size="1.5rem" className="tel:w-full lg:h-auto text-light-green" />
+              <span className="tel:w-full font-medium tel:text-sm text-gray-600 lg:pl-4">
                 bardosrichard99
               </span>
             </div>
           </div>
           <div className="w-full">
-            <div className="flex mb-6">
-              <MdEventAvailable size="1.5rem" className="h-auto text-light-green" />
-              <span className="font-medium text-gray-600 pl-4">
+            <div className="flex tel:flex-wrap mb-6">
+              <MdEventAvailable size="1.5rem" className="tel:w-full lg:h-auto text-light-green" />
+              <span className="tel:w-full font-medium tel:text-sm text-gray-600 lg:pl-4">
                 Munkakereső
               </span>
             </div>
@@ -63,7 +63,7 @@ function Contact() {
       </h1>
       <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
 
-      <div className="mb-10">
+      <div className="lg:mb-10">
         <form className="my-5 flex flex-wrap">
           <div className="w-1/2 pr-2">
             <div className="relative">
