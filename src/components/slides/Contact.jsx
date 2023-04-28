@@ -22,7 +22,7 @@ function Contact() {
         <div className="w-1/2 pt-4 pr-6 border-r-4 border-light-green-250">
           <div className="w-full">
             <div className="flex mb-6 tel:flex-wrap">
-              <FiMapPin size="1.5rem" className="tel:w-full lg:h-auto text-light-green" />
+              <FiMapPin size="1.5rem" className="tel:w-full lg:h-auto text-light-green tel:mb-3" />
               <span className=" tel:w-full font-medium tel:text-sm text-gray-600 lg:pl-4">
                 Budapest, HUN
               </span>
@@ -30,7 +30,7 @@ function Contact() {
           </div>
           <div className="w-full">
             <div className="flex mb-6 tel:flex-wrap">
-              <BsFillTelephoneFill size="1.5rem" className="tel:w-full lg:h-auto text-light-green" />
+              <BsFillTelephoneFill size="1.5rem" className="tel:w-full lg:h-auto text-light-green tel:mb-3" />
               <span className=" tel:w-full font-medium tel:text-sm text-gray-600 lg:pl-4">
                 +36309710372
               </span>
@@ -41,7 +41,7 @@ function Contact() {
         <div className="w-1/2 pt-4 pl-6">
           <div className="w-full">
             <div className="flex mb-6 tel:flex-wrap">
-              <BsFillEnvelopeFill size="1.5rem" className="tel:w-full lg:h-auto text-light-green" />
+              <BsFillEnvelopeFill size="1.5rem" className="tel:w-full lg:h-auto text-light-green tel:mb-3" />
               <span className="tel:w-full font-medium tel:text-sm text-gray-600 lg:pl-4">
                 bardosrichard99
               </span>
@@ -49,7 +49,7 @@ function Contact() {
           </div>
           <div className="w-full">
             <div className="flex tel:flex-wrap mb-6">
-              <MdEventAvailable size="1.5rem" className="tel:w-full lg:h-auto text-light-green" />
+              <MdEventAvailable size="1.5rem" className="tel:w-full lg:h-auto text-light-green tel:mb-3" />
               <span className="tel:w-full font-medium tel:text-sm text-gray-600 lg:pl-4">
                 Munkakereső
               </span>
@@ -65,7 +65,7 @@ function Contact() {
 
       <div className="lg:mb-10">
         <form className="my-5 flex flex-wrap">
-          <div className="w-1/2 pr-2">
+          <div className="lg:w-1/2 tel:w-full lg:pr-2 tel:mb-4">
             <div className="relative">
               <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                 <BsFillPersonFill className="text-light-green"/>
@@ -78,7 +78,7 @@ function Contact() {
               />
             </div>
           </div>
-          <div className="w-1/2 pl-2">
+          <div className="lg:w-1/2 tel:w-full lg:pl-2">
             <div className="relative">
               <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                 <BsFillEnvelopeFill className="text-light-green"/>
