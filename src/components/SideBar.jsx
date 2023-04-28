@@ -13,7 +13,7 @@ function SideBar() {
   };
 
   return (
-    <div className="lg:w-1/12 tel:w-2/12 tel:mt-8 text-white p-2 h-144">
+    <div className="lg:w-1/12 tel:w-2/12 tel:mt-14 text-white p-2 h-144">
       <div className="flex pt-4 pb-4 flex-col content-start text-center tel:fixed">
         <div
           id="AboutMe.jsx"

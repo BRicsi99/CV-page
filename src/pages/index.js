@@ -22,7 +22,8 @@ export default function Home() {
       <main
         className="font-sans antialiased h-screen text-gray-900 leading-normal tracking-wider bg-cover"
         style={{
-          backgroundImage: `url(https://source.unsplash.com/1L71sPT5XKc)`,
+          //backgroundImage: `url(https://source.unsplash.com/1L71sPT5XKc)`,
+          //backgroundColor: 'red',
         }}
       >
         <div
