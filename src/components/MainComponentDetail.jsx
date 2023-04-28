@@ -17,9 +17,9 @@ function MainComponentDetail() {
   return (
     <div
       id="profile"
-      className="lg:h-128 tel:my-20 lg:overflow-y-scroll tel:w-9/12 lg:w-7/12 rounded-lg lg:rounded-r-lg lg:rounded-l-none shadow-2xl bg-white opacity-80 lg:mx-0"
+      className="lg:h-128 tel:mt-20 tel:mb-4 lg:overflow-y-scroll tel:w-9/12 lg:w-7/12 rounded-lg lg:rounded-r-lg lg:rounded-l-none shadow-2xl bg-white opacity-80 lg:mx-0"
     >
-      <div className="p-4 md:p-12 text-center lg:text-left">
+      <div className="p-4 lg:p-12 tel:p-4 tel:pb-20 text-center lg:text-left">
         <div className="lg:hidden">
           <div
             className="block rounded-full shadow-xl mx-auto -mt-20 h-48 w-48 bg-cover bg-center"
@@ -66,7 +66,7 @@ function MainComponentDetail() {
             </a>
           </div>
 
-          <div className="mt-4 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-center gap-7">
+          <div className="mt-4 lg:pb-0 w-full mx-auto flex flex-wrap items-center justify-center gap-7">
             <button
               onClick={(e) => {
                 e.preventDefault();

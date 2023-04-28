@@ -28,7 +28,7 @@ export default function Home() {
       >
         <div
           id="profile"
-          className="lg:max-w-5xl flex lg:items-center h-screen flex-wrap mx-auto lg:my-0"
+          className="lg:max-w-5xl  tel:justify-center flex lg:items-center h-screen flex-wrap mx-auto lg:my-0"
         >
           <SideBar />
           <MainComponentBio />

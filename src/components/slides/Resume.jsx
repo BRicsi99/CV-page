@@ -10,8 +10,8 @@ function Resume() {
       <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
 
       <div className="flex mb-10">
-        <div className="w-1/2 pt-4 pr-6 border-r-4 border-light-green-250">
-          <h1 className="text-2xl font-semibold pt-8 lg:pt-0">Tapasztalat</h1>
+        <div className="w-1/2 pt-4 lg:pr-6 tel:pr-2 border-r-4 border-light-green-250">
+          <h1 className="lg:text-2xl tel:text-xl font-semibold pt-8 lg:pt-0">Tapasztalat</h1>
           <div className="w-full">
             <hr className="my-5 w-1/2 border-light-green opacity-25" />
             <span className="text-sm text-light-green border border-light-green rounded-md px-1">
@@ -38,14 +38,14 @@ function Resume() {
           </div>
         </div>
 
-        <div className="w-1/2 pt-4 pl-6">
-          <h1 className="text-2xl font-semibold pt-8 lg:pt-0">Tanulmányok</h1>
+        <div className="w-1/2 pt-4 lg:pl-6 tel:pl-2">
+          <h1 className="lg:text-2xl tel:text-xl font-semibold pt-8 lg:pt-0">Tanulmányok</h1>
           <div className="w-full">
             <hr className="my-5 w-1/2 border-light-green opacity-25" />
             <span className="text-sm text-light-green border border-light-green rounded-md px-1">
               2019 - Jelen
             </span>
-            <h2 className="font-medium pt-2">Gazdaságinformatikus BSc.</h2>
+            <h2 className="font-medium pt-2">Gazdaság informatikus BSc.</h2>
             <h4 className="text-sm text-gray-400">
               Corvinus University Budapest
             </h4>
@@ -75,8 +75,8 @@ function Resume() {
       <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
 
       <div className="flex mb-10">
-        <div className="w-1/2 pt-4 pr-6 border-r-4 border-light-green-250">
-          <h1 className="text-2xl font-semibold pt-8 lg:pt-0">Fejlesztés</h1>
+        <div className="w-1/2 pt-4 lg:pr-6 tel:pr-2 border-r-4 border-light-green-250">
+          <h1 className="lg:text-2xl tel:text-xl font-semibold pt-8 lg:pt-0">Fejlesztés</h1>
           <div className="w-full">
             <hr className="my-5 w-1/2 border-light-green opacity-25" />
             <div className="mb-1 text-base font-medium">HTML & CSS</div>
@@ -104,41 +104,41 @@ function Resume() {
           </div>
         </div>
 
-        <div className="w-1/2 pt-4 pl-6">
-          <h1 className="text-2xl font-semibold pt-8 lg:pt-0">Platformok</h1>
-          <div className="w-full">
+        <div className="w-1/2 pt-4 lg:pl-6 tel:pl-2">
+          <h1 className="lg:text-2xl tel:text-xl font-semibold pt-8 lg:pt-0">Platformok</h1>
+          <div className="w-full tel:text-center">
             <hr className="my-5 w-1/2 border-light-green opacity-25" />
-            <div className="flex mb-2">
-              <TiTick size="1.5rem" className="h-auto text-light-green" />
-              <span className="font-medium text-gray-600 pl-4">
+            <div className="flex mb-2 tel:justify-center">
+              <TiTick size="1.5rem" className="tel:hidden h-auto text-light-green" />
+              <span className="font-medium tel:text-sm text-gray-600 lg:pl-4">
                 Wordpress, WooCommerce
               </span>
             </div>
-            <div className="flex mb-2">
-              <TiTick size="1.5rem" className="h-auto text-light-green" />
-              <span className="font-medium text-gray-600 pl-4">
+            <div className="flex mb-2 tel:justify-center">
+              <TiTick size="1.5rem" className="tel:hidden h-auto text-light-green" />
+              <span className="font-medium tel:text-sm text-gray-600 lg:pl-4">
                 Visual Studio Code
               </span>
             </div>
-            <div className="flex mb-2">
-              <TiTick size="1.5rem" className="h-auto text-light-green" />
-              <span className="font-medium text-gray-600 pl-4">
+            <div className="flex mb-2 tel:justify-center">
+              <TiTick size="1.5rem" className="tel:hidden h-auto text-light-green" />
+              <span className="font-medium tel:text-sm text-gray-600 lg:pl-4">
                 GitLab, GitHub, BitBucket
               </span>
             </div>
-            <div className="flex mb-2">
-              <TiTick size="1.5rem" className="h-auto text-light-green" />
-              <span className="font-medium text-gray-600 pl-4">
+            <div className="flex mb-2 tel:justify-center">
+              <TiTick size="1.5rem" className="tel:hidden h-auto text-light-green" />
+              <span className="font-medium tel:text-sm text-gray-600 lg:pl-4">
                 Jira, YouTrack
               </span>
             </div>
-            <div className="flex mb-2">
-              <TiTick size="1.5rem" className="h-auto text-light-green" />
-              <span className="font-medium text-gray-600 pl-4">AWS, Azure</span>
+            <div className="flex mb-2 tel:justify-center">
+              <TiTick size="1.5rem" className="tel:hidden h-auto text-light-green" />
+              <span className="font-medium tel:text-sm text-gray-600 lg:pl-4">AWS, Azure</span>
             </div>
-            <div className="flex mb-2">
-              <TiTick size="1.5rem" className="h-auto text-light-green" />
-              <span className="font-medium text-gray-600 pl-4">
+            <div className="flex mb-2 tel:justify-center">
+              <TiTick size="1.5rem" className="tel:hidden h-auto text-light-green" />
+              <span className="font-medium tel:text-sm text-gray-600 lg:pl-4">
                 Notion, Slack, Hubspot
               </span>
             </div>

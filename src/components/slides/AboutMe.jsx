@@ -6,8 +6,8 @@ function AboutMe() {
     <div>
       <h1 className="text-3xl font-bold pt-8 lg:pt-0 text-light-green">Rólam</h1>
       <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
-      <div className="flex gap-x-10 pt-4 mb-10">
-        <div className="w-1/2">
+      <div className="flex tel:flex-wrap gap-x-10 pt-4 mb-10">
+        <div className="lg:w-1/2 tel:w-full tel:mb-4">
           <p className="text-sm flex items-center justify-center lg:justify-start text-justify">
             I am Richard Bardos, web developer from Hungary, Budapest. I have
             rich experience in web site design and building and customization,
@@ -15,15 +15,15 @@ function AboutMe() {
             unique.
           </p>
         </div>
-        <div className="w-1/2 flex flex-wrap">
-          <p className="w-1/2 text-center h-0 font-bold">Kor</p>
-          <p className="w-1/2 text-center h-0">23</p>
+        <div className="lg:w-1/2 tel:w-full flex flex-wrap">
+          <p className="w-1/2 text-center lg:h-0 font-bold">Kor</p>
+          <p className="w-1/2 text-center lg:h-0">23</p>
 
-          <p className="w-1/2 text-center h-0 font-bold">Származás</p>
-          <p className="w-1/2 text-center h-0">Magyar</p>
+          <p className="w-1/2 text-center lg:h-0 font-bold">Származás</p>
+          <p className="w-1/2 text-center lg:h-0">Magyar</p>
 
-          <p className="w-1/2 text-center h-0 font-bold">Állapot</p>
-          <p className="w-1/2 text-center h-0">Elérhető</p>
+          <p className="w-1/2 text-center lg:h-0 font-bold">Állapot</p>
+          <p className="w-1/2 text-center lg:h-0">Elérhető</p>
 
           <p className="w-1/2 text-center h-0 font-bold">Lakhely</p>
           <p className="w-1/2 text-center h-0">Budapest, HU</p>
@@ -34,7 +34,7 @@ function AboutMe() {
       <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
 
       <div className="flex pt-4 flex-wrap flex-row">
-        <div className="w-1/2 text-center px-3 pb-5">
+        <div className="w-1/2 text-center lg:px-3 pb-5">
           <div className="rounded-full bg-light-green p-3 w-14 m-auto">
             <FaReact size="2rem" className="h-auto text-white" />
           </div>
@@ -42,7 +42,7 @@ function AboutMe() {
           <p>Egyedi weboldalak fejlesztése</p>
         </div>
 
-        <div className="w-1/2 text-center px-3 pb-5">
+        <div className="w-1/2 text-center lg:px-3 pb-5">
           <div className="rounded-full bg-light-green p-3 w-14 m-auto">
             <FaReact size="2rem" className="h-auto text-white" />
           </div>
@@ -50,7 +50,7 @@ function AboutMe() {
           <p>Egyedi weboldalak fejlesztése</p>
         </div>
 
-        <div className="w-1/2 text-center px-3 pb-5">
+        <div className="w-1/2 text-center lg:px-3 pb-5">
           <div className="rounded-full bg-light-green p-3 w-14 m-auto">
             <FaReact size="2rem" className="h-auto text-white" />
           </div>
@@ -58,7 +58,7 @@ function AboutMe() {
           <p>Egyedi weboldalak fejlesztése</p>
         </div>
 
-        <div className="w-1/2 text-center px-3 pb-5">
+        <div className="w-1/2 text-center lg:px-3 pb-5">
           <div className="rounded-full bg-light-green p-3 w-14 m-auto">
             <FaReact size="2rem" className="h-auto text-white" />
           </div>
@@ -70,7 +70,7 @@ function AboutMe() {
       <h1 className="text-2xl font-bold pt-8 lg:pt-0">Hobbik</h1>
       <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
 
-      <div className="flex pt-4 pb-4 flex-wrap flex-row">
+      <div className="flex pt-4 pb-4 flex-wrap flex-row tel:gap-y-4">
         <div className="w-1/4 rounded-lg bg-light-green p-3 w-24 m-auto">
           <img
             src="images/wired-lineal-1764-pushups.gif"

@@ -10,7 +10,7 @@ export default function Document() {
         <link href="/dist/output.css" rel="stylesheet" />
       </Head>
       <body className="object-cover bg-[url(https://source.unsplash.com/1L71sPT5XKc)]">
-        <Main />
+        <Main/>
         <NextScript />
       </body>
     </Html>
