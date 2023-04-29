@@ -1,5 +1,7 @@
 import React from "react";
-import { FaReact, FaQuoteLeft } from "react-icons/fa";
+import { FaReact, FaQuoteLeft, FaWordpressSimple } from "react-icons/fa";
+import { CgWebsite } from "react-icons/cg";
+import { AiOutlineShoppingCart } from "react-icons/ai";
 import { useTranslations } from "next-intl";
 
 function AboutMe() {
@@ -50,7 +52,7 @@ function AboutMe() {
 
         <div className="w-1/2 text-center lg:px-3 pb-5">
           <div className="rounded-full bg-light-green p-3 w-14 m-auto">
-            <FaReact size="2rem" className="h-auto text-white" />
+            <CgWebsite size="2rem" className="h-auto text-white" />
           </div>
           <h3 className="lg:text-lg font-semibold">{lang("service2_ttl")}</h3>
           <p className="tel:text-sm">{lang("service2_dsc")}</p>
@@ -58,7 +60,7 @@ function AboutMe() {
 
         <div className="w-1/2 text-center lg:px-3 pb-5">
           <div className="rounded-full bg-light-green p-3 w-14 m-auto">
-            <FaReact size="2rem" className="h-auto text-white" />
+            <FaWordpressSimple size="2rem" className="h-auto text-white" />
           </div>
           <h3 className="lg:text-lg font-semibold">{lang("service3_ttl")}</h3>
           <p className="tel:text-sm">{lang("service3_dsc")}</p>
@@ -66,7 +68,7 @@ function AboutMe() {
 
         <div className="w-1/2 text-center lg:px-3 pb-5">
           <div className="rounded-full bg-light-green p-3 w-14 m-auto">
-            <FaReact size="2rem" className="h-auto text-white" />
+            <AiOutlineShoppingCart size="2rem" className="h-auto text-white" />
           </div>
           <h3 className="lg:text-lg font-semibold">{lang("service4_ttl")}</h3>
           <p className="tel:text-sm">{lang("service4_dsc")}</p>

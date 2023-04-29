@@ -11,14 +11,15 @@ export const PopUpProvider = ({ children }) => {
     progress: false,
     url: "",
     gitlab: "",
+    description: "",
   };
 
   const [state, dispatch] = useReducer(popupReducer, initialState);
 
-  const setVisible = (src, title, progress, url, gitlab) => {
+  const setVisible = (item) => {
     dispatch({
       type: "SET_VISIBLE",
-      payload: [src, title, progress, url, gitlab],
+      payload: [item.image, item.name, item.progress, item.url, item.gitlab, item.description],
     });
   };
 

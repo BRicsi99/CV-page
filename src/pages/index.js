@@ -14,7 +14,7 @@ import { useRouter } from "next/router";
 export default function Home() {
   const { status } = useContext(PopUpContext);
 
-  const { locales } = useRouter();
+  const { locales, locale } = useRouter();
   const lang = useTranslations("Index");
 
   return (
@@ -44,20 +44,21 @@ export default function Home() {
           <div className={`${status ? "" : "hidden"}`}>
             <PopUp />
           </div>
+        </div>
 
-          <div>
-            {[...locales].sort().map((locale) => (
-              <Link
-                key={locale}
-                href="/"
-                locale={locale}
-                className="px-10 text-white"
-              >
-                {locale}
-              </Link>
-            ))}
-          </div>
-
+        <div className="absolute top-0 left-0 h-12 w-18 p-4">
+          <button className="js-change-theme focus:outline-none">🌙</button>
+        </div>
+        <div className="absolute top-0 right-0 h-12 w-18 p-4">
+          {[...locales].filter(item => item !== locale).map((locale) => (
+            <Link
+              key={locale}
+              href="/"
+              locale={locale}
+            >
+              <img src={locale === "hu" ? "/images/hungary.png" : "/images/united-kingdom.png"} className="h-5"/>
+            </Link>
+          ))}
         </div>
       </main>
     </Fragment>

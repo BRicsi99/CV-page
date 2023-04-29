@@ -6,7 +6,7 @@ import { AiFillGitlab } from "react-icons/ai";
 import { useTranslations } from "next-intl";
 
 function PopUp() {
-  const { src, title, progress, url, gitlab, setHidden } =
+  const { src, title, progress, url, gitlab, description, setHidden } =
     useContext(PopUpContext);
   const lang = useTranslations("PopUp");
 
@@ -50,7 +50,7 @@ function PopUp() {
                 </h3>
                 <div className="mx-auto lg:mx-0 w-4/5 my-5 border-b-2 border-green-500 opacity-25"></div>
                 <p className="mb-3 lg:text-lg tel:text-medium text-gray-400">
-                  {"Lorem ipsum dolor sit amet, consectetur adipiscing elit."}
+                  {description}
                 </p>
                 <div className="tel:flex">
                   <div className="tel:w-1/2 flex gap-5 my-3 tel:justify-center">

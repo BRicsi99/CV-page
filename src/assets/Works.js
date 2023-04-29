@@ -6,7 +6,7 @@ export const works = [
       progress: true,
       url: "https://react-house-marketplace-six.vercel.app/",
       gitlab: "https://gitlab.com/bardosrichard99/react-house-marketplace",
-      discription: "disc",
+      description: "This application is a complex online house marketplace for renting and selling properties.",
     },
     {
       id: 2,
@@ -15,7 +15,7 @@ export const works = [
       progress: false,
       url: "https://react-github-finder-alpha-murex.vercel.app/",
       gitlab: "https://gitlab.com/bardosrichard99/react-github-finder",
-      discription: "disc",
+      description: "Browsing between Github accounts and check details with live connection to Github",
     },
     {
       id: 3,
@@ -24,7 +24,7 @@ export const works = [
       progress: false,
       url: "https://react-feedback-ui-pi.vercel.app/",
       gitlab: "https://gitlab.com/bardosrichard99/react-feedback-ui",
-      discription: "disc",
+      description: "You can set feedbacks on a scale of 1 to 10 and it is stored in a cloud database",
     },
     {
       id: 4,
@@ -33,7 +33,7 @@ export const works = [
       progress: false,
       url: "https://react-food-order-page-2-0.vercel.app/",
       gitlab: "https://gitlab.com/bardosrichard99/react-food-order-page-2.0",
-      discription: "disc",
+      description: "This is a lifelike food ordering webshop with checkout function",
     },
     {
       id: 5,
@@ -42,7 +42,7 @@ export const works = [
       progress: false,
       url: "https://react-redux-authentication.vercel.app/",
       gitlab: "https://gitlab.com/bardosrichard99/react-redux-authentication",
-      discription: "disc",
+      description: "The project is a representation of an authentication method given by Redux",
     },
     {
       id: 6,
@@ -51,6 +51,6 @@ export const works = [
       progress: false,
       url: "https://react-typescript-todo-eight.vercel.app/",
       gitlab: "https://gitlab.com/bardosrichard99/react-typescript-todo",
-      discription: "disc",
+      description: "This is a simple To Do application where the Typescript language exploration was the main focus",
     },
   ];

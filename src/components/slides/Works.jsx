@@ -15,7 +15,7 @@ function Works() {
       const newTab = window.open(item.url, "_blank");
       newTab.focus();
     } else {
-      setVisible(item.image, item.name, item.progress, item.url, item.gitlab);
+      setVisible(item);
     }
   };
 

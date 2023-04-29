@@ -9,6 +9,7 @@ const popupReducer = (state, action) => {
         progress: action.payload[2], 
         url: action.payload[3], 
         gitlab: action.payload[4],
+        description: action.payload[5],
       };
     case "SET_HIDDEN":
       return {
