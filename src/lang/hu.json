@@ -27,7 +27,7 @@
 
     "service_title": "Szolgáltatásaim",
     "service1_ttl": "Egyedi weboldalak",
-    "service1_dsc": "React.js & Next.js tenchológiával",
+    "service1_dsc": "React.js and Next.js technológiával",
     "service2_ttl": "Weboldal karbantartás",
     "service2_dsc": "Weboldalak havidíjas üzemeltetése",
     "service3_ttl": "Wordpress weboldal",
@@ -48,7 +48,7 @@
     "exp1_time": "2022 - Jelen",
     "exp1_ttl": "Frontend Fejlesztő",
     "exp1_place": "Garand Design",
-    "exp1_dsc": "Egyedi webapplikációk fejlesztése React.js és Next.js segítségével.",
+    "exp1_dsc": "Egyedi web applikációk fejlesztése React.js és Next.js segítségével.",
     "exp2_time": "2021 - 2022",
     "exp2_ttl": "Web Fejlesztő",
     "exp2_place": "Online Üzletfejlesztés kft",
@@ -62,7 +62,7 @@
     "edu2_time": "2022",
     "edu2_ttl": "Külföldi részképzés",
     "edu2_place": "National University of Singapore",
-    "edu2_dsc": "Fél éves külföldi képzés a világ egyik lejobb egyetemén (Python, R).",
+    "edu2_dsc": "Fél éves külföldi képzés a világ egyik legjobb egyetemén (Python, R).",
 
     "skills_title": "Képességek",
     "dev_title": "Fejlesztés",
