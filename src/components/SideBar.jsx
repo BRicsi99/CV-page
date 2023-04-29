@@ -23,7 +23,7 @@ function SideBar() {
           className="rounded-lg bg-white mb-2 py-1 w-full text-black hover:text-light-green transition duration-300 cursor-pointer"
         >
           <BsPerson className="h-auto px-3 pt-1 m-auto" size="3.5rem" />
-          <p className="text-sm">{lang("about")}</p>
+          <p className="text-[11px]">{lang("about")}</p>
         </div>
         <div
           id="Resume.jsx"
@@ -31,7 +31,7 @@ function SideBar() {
           className="rounded-lg bg-white mb-2 py-1 w-full text-black hover:text-light-green transition duration-300 cursor-pointer"
         >
           <RiNewspaperLine className="h-auto px-3 pt-1 m-auto" size="3.5rem" />
-          <p className="text-sm">{lang("resume")}</p>
+          <p className="text-[11px]">{lang("resume")}</p>
         </div>
         <div
           id="Works.jsx"
@@ -39,7 +39,7 @@ function SideBar() {
           className="rounded-lg bg-white mb-2 py-1 w-full text-black hover:text-light-green transition duration-300 cursor-pointer"
         >
           <IoMdCodeWorking className="h-auto px-3 pt-1 m-auto" size="3.5rem" />
-          <p className="text-sm">{lang("works")}</p>
+          <p className="text-[11px]">{lang("works")}</p>
         </div>
         <div
           id="Contact.jsx"
@@ -47,7 +47,7 @@ function SideBar() {
           className="rounded-lg bg-white mb-2 py-1 w-full text-black hover:text-light-green transition duration-300 cursor-pointer"
         >
           <MdOutlineAlternateEmail className="h-auto px-3 pt-1 m-auto" size="3.5rem" />
-          <p className="text-sm">{lang("contact")}</p>
+          <p className="text-[11px]">{lang("contact")}</p>
         </div>
       </div>
     </div>
