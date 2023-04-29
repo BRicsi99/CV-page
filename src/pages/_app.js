@@ -2,10 +2,11 @@ import "@/styles/globals.css";
 import React from "react";
 import { PageProvider } from "../context/PageSwitcherContext";
 import { PopUpProvider } from "../context/PopUpContext";
+import { ThemeProvider } from "../context/DarkModeContext";
 import { NextIntlProvider } from "next-intl";
-import { useRouter } from 'next/router';
-import en from '../lang/en.json';
-import hu from '../lang/hu.json';
+import { useRouter } from "next/router";
+import en from "../lang/en.json";
+import hu from "../lang/hu.json";
 
 const messages = {
   hu,
@@ -13,15 +14,15 @@ const messages = {
 };
 
 export default function App({ Component, pageProps }) {
-
-  const locale = useRouter();
-  const loc = locale.locale === 'en' ? 'en' : 'hu'; //átmeneti megoldásként
+  const { locale } = useRouter();
 
   return (
-    <NextIntlProvider locale={loc} messages={messages[loc]}>
+    <NextIntlProvider locale={locale} messages={messages[locale]}>
       <PageProvider>
         <PopUpProvider>
-          <Component {...pageProps} />
+          <ThemeProvider>
+            <Component {...pageProps} />
+          </ThemeProvider>
         </PopUpProvider>
       </PageProvider>
     </NextIntlProvider>

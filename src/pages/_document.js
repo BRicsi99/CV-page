@@ -1,17 +1,16 @@
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
+
   return (
-    <Html
-      className="object-cover bg-[url(https://source.unsplash.com/1L71sPT5XKc)]"
-    >
+    <Html>
       <Head>
         <link rel="icon" href="/man.ico" />
         <link href="/dist/output.css" rel="stylesheet" />
-        <link rel="alternate" href="/" hrefLang="en" />
-        <link rel="alternate" href="/hu" hrefLang="hu" />
+        <link rel="alternate" href="/en" hrefLang="en" />
+        <link rel="alternate" href="/" hrefLang="hu" />
       </Head>
-      <body className="object-cover bg-[url(https://source.unsplash.com/1L71sPT5XKc)]">
+      <body >
         <Main/>
         <NextScript />
       </body>

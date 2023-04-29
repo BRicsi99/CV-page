@@ -1,6 +1,6 @@
 ## CV page
 
-Tech: Next.js, React.js, Tailwind CSS, React-icons, next-intl
+Tech: Next.js, React.js, Tailwind CSS, React-icons, Next-intl, Context
 Reason:
 
 Functions:

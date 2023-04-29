@@ -4,6 +4,7 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./public/**/*",
  
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
@@ -24,8 +25,10 @@ module.exports = {
       screens: {
         'tel': {'max': '1023px'},
         // => @media (max-width: 1023px) { ... }
-      }
+      },
+      
     }
   },
   plugins: [],
+  darkMode: 'class',
 }

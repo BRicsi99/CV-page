@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import Head from "next/head";
 import { Fragment } from "react";
-import { Poppins } from "next/font/google";
 import MainComponentBio from "@/components/MainComponentBio";
 import MainComponentDetail from "@/components/MainComponentDetail";
 import SideBar from "@/components/SideBar";
@@ -10,9 +9,11 @@ import PopUpContext from "@/context/PopUpContext";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import ThemeContext from "@/context/DarkModeContext";
 
 export default function Home() {
   const { status } = useContext(PopUpContext);
+  const { currentThemeLight, setTheme } = useContext(ThemeContext);
 
   const { locales, locale } = useRouter();
   const lang = useTranslations("Index");
@@ -25,13 +26,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main
-        className="font-sans antialiased h-screen text-gray-900 leading-normal tracking-wider bg-cover"
-        style={
-          {
-            //backgroundImage: `url(https://source.unsplash.com/1L71sPT5XKc)`,
-            //backgroundColor: 'red',
-          }
-        }
+        className={`font-sans antialiased h-screen text-gray-900 leading-normal tracking-wider bg-cover ${currentThemeLight ? "beach" : "sunset dark"}`}
       >
         <div
           id="profile"
@@ -45,9 +40,9 @@ export default function Home() {
             <PopUp />
           </div>
         </div>
-
+      
         <div className="absolute top-0 left-0 h-12 w-18 p-4">
-          <button className="js-change-theme focus:outline-none">🌙</button>
+          <button onClick={setTheme} className="js-change-theme focus:outline-none">🌙</button>
         </div>
         <div className="absolute top-0 right-0 h-12 w-18 p-4">
           {[...locales].filter(item => item !== locale).map((locale) => (

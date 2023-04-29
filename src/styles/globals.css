@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.beach{
+    background-image: url('/images/beach2.jpg');
+}
+.sunset{
+    background-image: url('/images/sunset.jpg');
+}
