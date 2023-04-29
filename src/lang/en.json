@@ -2,5 +2,89 @@
   "Index": {
     "head-title": "Richárd Bárdos",
     "head-description": "This is my introductory website"
+  },
+  "MainComponentBio": {
+    "name": "Richárd Bárdos",
+    "position": "Frontend Developer",
+    "cv": "CV Download",
+    "contact": "Contact"
+  },  
+  "SideBar": {
+    "about": "About",
+    "resume": "Resume",
+    "works": "Works",
+    "contact": "Contact"
+  },
+  "AboutMe": {
+    "title": "Rólam",
+    "about-text": "Bárdos Richárd vagyok, Frontend fejlesztő. Több mint 2 éves webfejlesztői tapasztalatommal és a legújabb technológiák birtokában bármilyen akadályt leküzdök. Emellett maximalistának és preciznak vallom magam, ami tökéletes munkákat és elégedett ügyfeleket vonz magával.",
+    "age": "Kor",
+    "nationality": "Származás",
+    "nation": "Magyar",
+    "status": "Állapot",
+    "status_ans": "Munkakereső",
+    "location": "Lakhely",
+
+    "service_title": "Szolgáltatásaim",
+    "service1_ttl": "Egyedi weboldalak",
+    "service1_dsc": "React.js & Next.js tenchológiával",
+    "service2_ttl": "Weboldal karbantartás",
+    "service2_dsc": "Weboldalak havidíjas üzemeltetése",
+    "service3_ttl": "Wordpress weboldal",
+    "service3_dsc": "Wordpress alapú CMS rendszerek KKV-knak",
+    "service4_ttl": "Webshop",
+    "service4_dsc": "Webshop motorok testreszabása, tanácsadás",
+
+    "hobbies": "Hobbik",
+    "quote_title": "Kedvenc idézet",
+    "quote": "There are 3 ways to make a living in this business: Be first, Be smarter, Or cheat. But, I don't cheat!",
+    "quote_name": "Jeremy Irons",
+    "quote_source": "Margin Call",
+    "quote_alt": "Jeremy Irons fénykép"
+  },
+  "Resume": {
+    "title": "Önéletrajz",
+    "experience_title": "Tapasztalat",
+    "exp1_time": "2022 - Jelen",
+    "exp1_ttl": "Frontend Fejlesztő",
+    "exp1_place": "Garand Design",
+    "exp1_dsc": "Egyedi webapplikációk fejlesztése React.js és Next.js segítségével.",
+    "exp2_time": "2021 - 2022",
+    "exp2_ttl": "Web Fejlesztő",
+    "exp2_place": "Online Üzletfejlesztés kft",
+    "exp2_dsc": "Wordpress weboldalak és webshopok fejlesztése, üzemeltetése.",
+
+    "education_title": "Tanulmányok",
+    "edu1_time": "2019 - Jelen",
+    "edu1_ttl": "Gazdaság informatikus BSc.",
+    "edu1_place": "Corvinus University Budapest",
+    "edu1_dsc": "Windows és web applikációk fejlesztése (C#, JavaScript, PHP, VBA).",
+    "edu2_time": "2022",
+    "edu2_ttl": "Külföldi részképzés",
+    "edu2_place": "National University of Singapore",
+    "edu2_dsc": "Fél éves külföldi képzés a világ egyik lejobb egyetemén (Python, R).",
+
+    "skills_title": "Képességek",
+    "dev_title": "Fejlesztés",
+    "platforms_title": "Platformok",
+    "language_title": "Nyelvtudás",
+    "lang1": "Magyar",
+    "lang2": "Angol"
+  },
+  "Works": {
+    "title": "Works"
+  },
+  "Contact": {
+    "title": "Kapcsolat",
+    "status": "Munkakereső",
+    "writeme": "Írj nekem",
+    "ph_name": "Teljes név",
+    "ph_email": "Email cím",
+    "ph_message": "Üzeneted"
+  },
+  "PopUp": {
+    "title": "Project leírás",
+    "ongoing": "Folyamatban",
+    "done": "Kész"
   }
 }

@@ -4,9 +4,11 @@ import { BsPerson } from "react-icons/bs";
 import { RiNewspaperLine } from "react-icons/ri";
 import { IoMdCodeWorking } from "react-icons/io";
 import { MdOutlineAlternateEmail } from "react-icons/md";
+import { useTranslations } from "next-intl";
 
 function SideBar() {
   const { setPage } = useContext(PageContext);
+  const lang = useTranslations("SideBar");
 
   const onPageChange = (e) => {
     setPage(e.currentTarget.id);
@@ -21,7 +23,7 @@ function SideBar() {
           className="rounded-lg bg-white mb-2 py-1 w-full text-black hover:text-light-green transition duration-300 cursor-pointer"
         >
           <BsPerson className="h-auto px-3 pt-1 m-auto" size="3.5rem" />
-          <p className="text-sm">About</p>
+          <p className="text-sm">{lang("about")}</p>
         </div>
         <div
           id="Resume.jsx"
@@ -29,7 +31,7 @@ function SideBar() {
           className="rounded-lg bg-white mb-2 py-1 w-full text-black hover:text-light-green transition duration-300 cursor-pointer"
         >
           <RiNewspaperLine className="h-auto px-3 pt-1 m-auto" size="3.5rem" />
-          <p className="text-sm">Resume</p>
+          <p className="text-sm">{lang("resume")}</p>
         </div>
         <div
           id="Works.jsx"
@@ -37,7 +39,7 @@ function SideBar() {
           className="rounded-lg bg-white mb-2 py-1 w-full text-black hover:text-light-green transition duration-300 cursor-pointer"
         >
           <IoMdCodeWorking className="h-auto px-3 pt-1 m-auto" size="3.5rem" />
-          <p className="text-sm">Works</p>
+          <p className="text-sm">{lang("works")}</p>
         </div>
         <div
           id="Contact.jsx"
@@ -45,7 +47,7 @@ function SideBar() {
           className="rounded-lg bg-white mb-2 py-1 w-full text-black hover:text-light-green transition duration-300 cursor-pointer"
         >
           <MdOutlineAlternateEmail className="h-auto px-3 pt-1 m-auto" size="3.5rem" />
-          <p className="text-sm">Contact</p>
+          <p className="text-sm">{lang("contact")}</p>
         </div>
       </div>
     </div>
@@ -53,3 +55,12 @@ function SideBar() {
 }
 
 export default SideBar;
+
+// Language file search
+export async function getStaticProps(context) {
+  return {
+    props: {
+      messages: (await import(`../lang/${context.locale}.json`)).default,
+    },
+  };
+}

@@ -6,6 +6,7 @@ export const works = [
       progress: true,
       url: "https://react-house-marketplace-six.vercel.app/",
       gitlab: "https://gitlab.com/bardosrichard99/react-house-marketplace",
+      discription: "disc",
     },
     {
       id: 2,
@@ -14,6 +15,7 @@ export const works = [
       progress: false,
       url: "https://react-github-finder-alpha-murex.vercel.app/",
       gitlab: "https://gitlab.com/bardosrichard99/react-github-finder",
+      discription: "disc",
     },
     {
       id: 3,
@@ -22,6 +24,7 @@ export const works = [
       progress: false,
       url: "https://react-feedback-ui-pi.vercel.app/",
       gitlab: "https://gitlab.com/bardosrichard99/react-feedback-ui",
+      discription: "disc",
     },
     {
       id: 4,
@@ -30,6 +33,7 @@ export const works = [
       progress: false,
       url: "https://react-food-order-page-2-0.vercel.app/",
       gitlab: "https://gitlab.com/bardosrichard99/react-food-order-page-2.0",
+      discription: "disc",
     },
     {
       id: 5,
@@ -38,6 +42,7 @@ export const works = [
       progress: false,
       url: "https://react-redux-authentication.vercel.app/",
       gitlab: "https://gitlab.com/bardosrichard99/react-redux-authentication",
+      discription: "disc",
     },
     {
       id: 6,
@@ -46,5 +51,6 @@ export const works = [
       progress: false,
       url: "https://react-typescript-todo-eight.vercel.app/",
       gitlab: "https://gitlab.com/bardosrichard99/react-typescript-todo",
+      discription: "disc",
     },
   ];

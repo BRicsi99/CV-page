@@ -1,17 +1,19 @@
-import React, { useContext } from "react";
+import React, { Fragment, useContext } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { AiFillGitlab } from "react-icons/ai";
 import PageContext from "@/context/PageSwitcherContext";
+import { useTranslations } from "next-intl";
 
 function MainComponentBio() {
   const { setPage } = useContext(PageContext);
+  const lang = useTranslations("MainComponentBio");
 
   const onPageChange = (e) => {
     setPage(e.currentTarget.id);
   };
 
   return (
-    <>
+    <Fragment>
       <div className="h-144 tel:hidden lg:w-4/12 bg-white lg:rounded-lg">
         <img
           src="images/DSC_5579_resized2.jpg"
@@ -19,10 +21,10 @@ function MainComponentBio() {
         />
         <div>
           <h1 className="text-3xl pt-8 lg:pt-0 mt-5 text-center fade-in-out">
-            Bárdos Richárd
+            {lang("name")}
           </h1>
           <p className="text-1xl pt-8 lg:pt-0 my-3 text-center text-light-green font-medium">
-            Frontend Fejlesztő
+            {lang("position")}
           </p>
 
           <div className="mt-7 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-center gap-7">
@@ -67,7 +69,7 @@ function MainComponentBio() {
               className="relative inline-flex p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800"
             >
               <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                CV Letöltése
+                {lang("cv")}
               </span>
             </button>
             <button
@@ -76,7 +78,7 @@ function MainComponentBio() {
               className="relative inline-flex p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800"
             >
               <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                Kapcsolat
+              {lang("contact")}
               </span>
             </button>
           </div>
@@ -86,8 +88,17 @@ function MainComponentBio() {
       <div className="absolute top-0 right-0 h-12 w-18 p-4">
         <button className="js-change-theme focus:outline-none">🌙</button>
       </div>
-    </>
+    </Fragment>
   );
 }
 
 export default MainComponentBio;
+
+// Language file search
+export async function getStaticProps(context) {
+  return {
+    props: {
+      messages: (await import(`../lang/${context.locale}.json`)).default,
+    },
+  };
+}

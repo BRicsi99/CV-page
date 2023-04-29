@@ -3,10 +3,12 @@ import PopUpContext from "../context/PopUpContext";
 import { RxCross2 } from "react-icons/rx";
 import { FaEye, FaLink } from "react-icons/fa";
 import { AiFillGitlab } from "react-icons/ai";
+import { useTranslations } from "next-intl";
 
 function PopUp() {
   const { src, title, progress, url, gitlab, setHidden } =
     useContext(PopUpContext);
+  const lang = useTranslations("PopUp");
 
   return (
     <div
@@ -16,7 +18,7 @@ function PopUp() {
       <div className="tel:flex tel:flex-wrap relative lg:w-5/6 tel:w-11/12 max-h-8/10 lg:max-w-5/6 tel:max-w-11/12 bg-white rounded-lg shadow dark:bg-gray-700">
         <div className="flex tel:w-full items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
           <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-            {title}
+            {lang("title")}
           </h3>
           <button
             type="button"
@@ -77,7 +79,7 @@ function PopUp() {
                   <div className="tel:w-1/2 flex tel:flex-wrap tel:gap-y-4 tel:content-center">
                     <div className="lg:mr-3 tel:w-1/2 tel:text-center">
                       <span className="bg-orange-100 text-orange-800 text-xs font-medium lg:mr-2 px-2.5 py-1 rounded-full dark:bg-green-900 dark:text-green-300">
-                        {progress ? "Folyamatban" : "Kész"}
+                        {progress ? lang("ongoing") : lang("done")}
                       </span>
                     </div>
                     <div className="tel:w-1/2 tel:justify-center">
@@ -98,3 +100,12 @@ function PopUp() {
 }
 
 export default PopUp;
+
+// Language file search
+export async function getStaticProps(context) {
+  return {
+    props: {
+      messages: (await import(`../lang/${context.locale}.json`)).default,
+    },
+  };
+}

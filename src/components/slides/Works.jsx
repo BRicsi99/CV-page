@@ -1,10 +1,11 @@
 import React, { useContext } from "react";
 import PopUpContext from "../../context/PopUpContext";
 import {works} from "@/assets/Works";
-
+import { useTranslations } from "next-intl";
 
 function Works() {
   const { setVisible } = useContext(PopUpContext);
+  const lang = useTranslations("Works");
 
   const onSetVisible = (e) => {
     const item = works.find(
@@ -21,7 +22,7 @@ function Works() {
   return (
     <div>
       <h1 className="text-3xl font-bold pt-8 lg:pt-0 text-light-green">
-        Referencia
+        {lang("title")}
       </h1>
       <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
 
@@ -58,3 +59,12 @@ function Works() {
 }
 
 export default Works;
+
+// Language file search
+export async function getStaticProps(context) {
+  return {
+    props: {
+      messages: (await import(`../../lang/${context.locale}.json`)).default,
+    },
+  };
+}

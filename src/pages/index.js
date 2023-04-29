@@ -20,8 +20,8 @@ export default function Home() {
   return (
     <Fragment>
       <Head>
-        <title>{lang("head-title")}</title>
-        <meta name="description" content={lang("head-description")} />
+        <title>{lang("head_title")}</title>
+        <meta name="description" content={lang("head_description")} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main
