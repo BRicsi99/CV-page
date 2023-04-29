@@ -26,7 +26,6 @@ module.exports = {
         'tel': {'max': '1023px'},
         // => @media (max-width: 1023px) { ... }
       },
-      
     }
   },
   plugins: [],

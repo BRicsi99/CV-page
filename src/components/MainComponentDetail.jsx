@@ -17,7 +17,7 @@ function MainComponentDetail() {
   return (
     <div
       id="profile"
-      className="lg:h-128 tel:mt-20 tel:mb-4 lg:overflow-y-scroll tel:w-9/12 lg:w-7/12 rounded-lg lg:rounded-r-lg lg:rounded-l-none shadow-2xl bg-white opacity-80 lg:mx-0"
+      className="lg:h-128 tel:mt-20 tel:mb-4 lg:overflow-y-scroll tel:w-9/12 lg:w-7/12 rounded-lg lg:rounded-r-lg lg:rounded-l-none shadow-2xl bg-white dark:bg-gray-800 opacity-80 lg:mx-0"
     >
       <div className="p-4 lg:p-12 tel:p-4 tel:pb-20 text-center lg:text-left">
         <div className="lg:hidden">

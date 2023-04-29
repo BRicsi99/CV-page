@@ -18,6 +18,21 @@ export default function Home() {
   const { locales, locale } = useRouter();
   const lang = useTranslations("Index");
 
+  const useThemeDetector = () => {
+    const getCurrentTheme = () => window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const [isDarkTheme, setIsDarkTheme] = useState(getCurrentTheme());  
+    const mqListener = (e => {
+        setIsDarkTheme(e.matches);
+    });
+    
+    useEffect(() => {
+      const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+      darkThemeMq.addListener(mqListener);
+      return () => darkThemeMq.removeListener(mqListener);
+    }, []);
+    return isDarkTheme;
+}
+
   return (
     <Fragment>
       <Head>
@@ -26,7 +41,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main
-        className={`font-sans antialiased h-screen text-gray-900 leading-normal tracking-wider bg-cover ${currentThemeLight ? "beach" : "sunset dark"}`}
+        className={`font-sans antialiased h-screen text-gray-900 leading-normal tracking-wider ${currentThemeLight ? "beach" : "sunset dark"}`}
       >
         <div
           id="profile"
@@ -40,7 +55,7 @@ export default function Home() {
             <PopUp />
           </div>
         </div>
-      
+
         <div className="absolute top-0 left-0 h-12 w-18 p-4">
           <button onClick={setTheme} className="js-change-theme focus:outline-none">🌙</button>
         </div>

@@ -4,7 +4,15 @@
 
 .beach{
     background-image: url('/images/beach2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;  
+    background-attachment: fixed;
 }
 .sunset{
     background-image: url('/images/sunset.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;  
+    background-attachment: fixed;
 }
