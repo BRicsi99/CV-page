@@ -19,7 +19,7 @@ function AboutMe() {
             {lang("about-text")}
           </p>
         </div>
-        <div className="lg:w-1/2 tel:w-full flex flex-wrap dark:text-white">
+        <div className="lg:w-1/2 tel:w-full flex flex-wrap dark:text-white tel:gap-y-2">
           <p className="w-1/2 text-center lg:h-0 font-bold">{lang("age")}</p>
           <p className="w-1/2 text-center lg:h-0">23</p>
 

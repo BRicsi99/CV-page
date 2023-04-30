@@ -42,7 +42,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="absolute top-0 left-0 h-12 w-18 p-4">
+        <div className="absolute top-0 left-0 h-12 w-18 p-4 tel:hidden">
           <button
             onClick={() =>
               currentTheme == "dark" ? setTheme("light") : setTheme("dark")
@@ -52,7 +52,7 @@ export default function Home() {
             🌙
           </button>
         </div>
-        <div className="absolute top-0 right-0 h-12 w-18 p-4">
+        <div className="absolute top-0 right-0 h-12 w-18 p-4 tel:hidden">
           {[...locales]
             .filter((item) => item !== locale)
             .map((locale) => (
