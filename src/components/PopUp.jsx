@@ -52,8 +52,8 @@ function PopUp() {
                 <p className="mb-3 lg:text-lg tel:text-medium text-gray-400">
                   {description}
                 </p>
-                <div className="tel:flex">
-                  <div className="tel:w-1/2 flex gap-5 my-3 tel:justify-center">
+                <div className="tel:flex tel:flex-wrap">
+                  <div className="tel:w-full flex gap-5 my-3 tel:justify-center">
                     <a
                       className="link cursor-pointer"
                       href={url}
@@ -76,14 +76,14 @@ function PopUp() {
                     </a>
                   </div>
 
-                  <div className="tel:w-1/2 flex tel:flex-wrap tel:gap-y-4 tel:content-center">
+                  <div className="tel:w-full flex tel:flex-wrap tel:content-center">
                     <div className="lg:mr-3 tel:w-1/2 tel:text-center">
                       <span className="bg-orange-100 text-orange-800 text-xs font-medium lg:mr-2 px-2.5 py-1 rounded-full dark:bg-orange-800 dark:text-white">
                         {progress ? lang("ongoing") : lang("done")}
                       </span>
                     </div>
-                    <div className="tel:w-1/2 tel:justify-center">
-                      <span className="pt-1 flex w-14 bg-blue-100 text-blue-800 text-xs font-medium lg:mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-white">
+                    <div className="tel:w-1/2 tel:m-auto tel:content-center">
+                      <span className="pt-1 flex w-14 bg-blue-100 text-blue-800 text-xs font-medium lg:mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-white tel:mx-auto">
                         <FaEye size="1.1rem" className="mr-2 " />
                         {4}
                       </span>
