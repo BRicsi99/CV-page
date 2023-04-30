@@ -1,13 +1,9 @@
+import React from 'react'
 import { Html, Head, Main, NextScript } from "next/document";
-import { ThemeProvider } from "../context/DarkModeContext";
-import React, { useContext } from "react";
 
 export default function Document() {
-
-
   return (
-    <ThemeProvider>
-      <Html className="h-full">
+      <Html className="h-full sunset">
         <Head>
           <link rel="icon" href="/man.ico" />
           <link href="/dist/output.css" rel="stylesheet" />
@@ -19,6 +15,5 @@ export default function Document() {
           <NextScript />
         </body>
       </Html>
-    </ThemeProvider>
   );
 }

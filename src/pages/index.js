@@ -9,29 +9,15 @@ import PopUpContext from "@/context/PopUpContext";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import ThemeContext from "@/context/DarkModeContext";
+import { useTheme } from "next-themes";
 
 export default function Home() {
   const { status } = useContext(PopUpContext);
-  const { currentThemeLight, setTheme } = useContext(ThemeContext);
+  const { systemTheme, theme, setTheme } = useTheme();
+  const currentTheme = theme === "system" ? systemTheme : theme;
 
   const { locales, locale } = useRouter();
   const lang = useTranslations("Index");
-
-  const useThemeDetector = () => {
-    const getCurrentTheme = () => window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const [isDarkTheme, setIsDarkTheme] = useState(getCurrentTheme());  
-    const mqListener = (e => {
-        setIsDarkTheme(e.matches);
-    });
-    
-    useEffect(() => {
-      const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
-      darkThemeMq.addListener(mqListener);
-      return () => darkThemeMq.removeListener(mqListener);
-    }, []);
-    return isDarkTheme;
-}
 
   return (
     <Fragment>
@@ -41,7 +27,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main
-        className={`font-sans antialiased h-screen text-gray-900 leading-normal tracking-wider ${currentThemeLight ? "beach" : "sunset dark"}`}
+        className={`font-sans antialiased h-screen text-gray-900 leading-normal tracking-wider ${
+          currentTheme == "light" ? "beach" : "sunset"
+        }`}
       >
         <div
           id="profile"
@@ -57,18 +45,30 @@ export default function Home() {
         </div>
 
         <div className="absolute top-0 left-0 h-12 w-18 p-4">
-          <button onClick={setTheme} className="js-change-theme focus:outline-none">🌙</button>
+          <button
+            onClick={() =>
+              currentTheme == "dark" ? setTheme("light") : setTheme("dark")
+            }
+            className="js-change-theme focus:outline-none"
+          >
+            🌙
+          </button>
         </div>
         <div className="absolute top-0 right-0 h-12 w-18 p-4">
-          {[...locales].filter(item => item !== locale).map((locale) => (
-            <Link
-              key={locale}
-              href="/"
-              locale={locale}
-            >
-              <img src={locale === "hu" ? "/images/hungary.png" : "/images/united-kingdom.png"} className="h-5"/>
-            </Link>
-          ))}
+          {[...locales]
+            .filter((item) => item !== locale)
+            .map((locale) => (
+              <Link key={locale} href="/" locale={locale}>
+                <img
+                  src={
+                    locale === "hu"
+                      ? "/images/hungary.png"
+                      : "/images/united-kingdom.png"
+                  }
+                  className="h-5"
+                />
+              </Link>
+            ))}
         </div>
       </main>
     </Fragment>
