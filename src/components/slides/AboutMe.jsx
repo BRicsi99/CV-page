@@ -15,11 +15,11 @@ function AboutMe() {
       <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
       <div className="flex tel:flex-wrap pt-4 mb-10">
         <div className="lg:w-1/2 tel:w-full tel:mb-4 tel:px-2">
-          <p className="text-sm flex items-center justify-center lg:justify-start tel:text-justify">
+          <p className="text-sm flex items-center justify-center lg:justify-start tel:text-justify dark:text-white">
             {lang("about-text")}
           </p>
         </div>
-        <div className="lg:w-1/2 tel:w-full flex flex-wrap">
+        <div className="lg:w-1/2 tel:w-full flex flex-wrap dark:text-white">
           <p className="w-1/2 text-center lg:h-0 font-bold">{lang("age")}</p>
           <p className="w-1/2 text-center lg:h-0">23</p>
 
@@ -36,12 +36,12 @@ function AboutMe() {
         </div>
       </div>
 
-      <h1 className="text-2xl font-bold pt-8 lg:pt-0">
+      <h1 className="text-2xl font-bold pt-8 lg:pt-0 dark:text-white">
         {lang("service_title")}
       </h1>
       <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
 
-      <div className="flex pt-4 flex-wrap flex-row">
+      <div className="flex pt-4 flex-wrap flex-row dark:text-white">
         <div className="w-1/2 text-center lg:px-3 pb-5">
           <div className="rounded-full bg-light-green p-3 w-14 m-auto">
             <FaReact size="2rem" className="h-auto text-white" />
@@ -75,7 +75,7 @@ function AboutMe() {
         </div>
       </div>
 
-      <h1 className="text-2xl font-bold pt-8 lg:pt-0">{lang("hobbies")}</h1>
+      <h1 className="text-2xl font-bold pt-8 lg:pt-0 dark:text-white">{lang("hobbies")}</h1>
       <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
 
       <div className="flex pt-4 pb-4 flex-wrap flex-row tel:gap-y-4">
@@ -97,7 +97,7 @@ function AboutMe() {
         </div>
       </div>
 
-      <h1 className="text-2xl font-bold pt-8 lg:pt-0">{lang("quote_title")}</h1>
+      <h1 className="text-2xl font-bold pt-8 lg:pt-0 dark:text-white">{lang("quote_title")}</h1>
       <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
 
       <figure className="max-w-screen-md mx-auto text-center">

@@ -20,7 +20,7 @@ function SideBar() {
         <div
           id="AboutMe.jsx"
           onClick={onPageChange}
-          className="rounded-lg bg-white mb-2 py-1 w-full text-black hover:text-light-green transition duration-300 cursor-pointer"
+          className="rounded-lg bg-white dark:bg-gray-700 mb-2 py-1 w-full text-black dark:text-white hover:text-light-green dark:hover:text-light-green transition duration-300 cursor-pointer"
         >
           <BsPerson className="h-auto px-3 pt-1 m-auto" size="3.5rem" />
           <p className="text-[11px]">{lang("about")}</p>
@@ -28,7 +28,7 @@ function SideBar() {
         <div
           id="Resume.jsx"
           onClick={onPageChange}
-          className="rounded-lg bg-white mb-2 py-1 w-full text-black hover:text-light-green transition duration-300 cursor-pointer"
+          className="rounded-lg bg-white dark:bg-gray-700 mb-2 py-1 w-full text-black dark:text-white hover:text-light-green dark:hover:text-light-green transition duration-300 cursor-pointer"
         >
           <RiNewspaperLine className="h-auto px-3 pt-1 m-auto" size="3.5rem" />
           <p className="text-[11px]">{lang("resume")}</p>
@@ -36,7 +36,7 @@ function SideBar() {
         <div
           id="Works.jsx"
           onClick={onPageChange}
-          className="rounded-lg bg-white mb-2 py-1 w-full text-black hover:text-light-green transition duration-300 cursor-pointer"
+          className="rounded-lg bg-white dark:bg-gray-700 mb-2 py-1 w-full text-black dark:text-white hover:text-light-green dark:hover:text-light-green transition duration-300 cursor-pointer"
         >
           <IoMdCodeWorking className="h-auto px-3 pt-1 m-auto" size="3.5rem" />
           <p className="text-[11px]">{lang("works")}</p>
@@ -44,7 +44,7 @@ function SideBar() {
         <div
           id="Contact.jsx"
           onClick={onPageChange}
-          className="rounded-lg bg-white mb-2 py-1 w-full text-black hover:text-light-green transition duration-300 cursor-pointer"
+          className="rounded-lg bg-white dark:bg-gray-700 mb-2 py-1 w-full text-black dark:text-white hover:text-light-green dark:hover:text-light-green transition duration-300 cursor-pointer"
         >
           <MdOutlineAlternateEmail className="h-auto px-3 pt-1 m-auto" size="3.5rem" />
           <p className="text-[11px]">{lang("contact")}</p>

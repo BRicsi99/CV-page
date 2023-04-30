@@ -32,7 +32,7 @@ function Works() {
             <div key={item.id} className="cursor-pointer">
               <img
                 id={item.id}
-                className="h-auto max-w-full rounded-lg border shadow"
+                className="h-auto max-w-full rounded-lg border shadow dark:border-black"
                 src={item.image}
                 alt={item.name}
                 onClick={onSetVisible}
@@ -45,7 +45,7 @@ function Works() {
             <div key={item.id} className="cursor-pointer">
               <img
                 id={item.id}
-                className="h-auto max-w-full rounded-lg  border shadow"
+                className="h-auto max-w-full rounded-lg border shadow dark:border-black"
                 src={item.image}
                 alt={item.name}
                 onClick={onSetVisible}

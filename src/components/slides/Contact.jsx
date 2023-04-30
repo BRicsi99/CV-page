@@ -34,7 +34,7 @@ function Contact() {
                   size="1.5rem"
                   className="tel:w-full lg:h-auto text-light-green tel:mb-3"
                 />
-                <span className="tel:w-full font-medium tel:text-sm text-gray-600 lg:pl-4 hover:text-light-green">
+                <span className="tel:w-full font-medium tel:text-sm text-gray-600 lg:pl-4 hover:text-light-green dark:text-white dark:hover:text-light-green">
                   Budapest, HUN
                 </span>
               </div>
@@ -47,7 +47,7 @@ function Contact() {
                   size="1.5rem"
                   className="tel:w-full lg:h-auto text-light-green tel:mb-3"
                 />
-                <span className=" tel:w-full font-medium tel:text-sm text-gray-600 lg:pl-4 hover:text-light-green">
+                <span className=" tel:w-full font-medium tel:text-sm text-gray-600 lg:pl-4 hover:text-light-green dark:text-white dark:hover:text-light-green">
                   +36309710372
                 </span>
               </div>
@@ -63,7 +63,7 @@ function Contact() {
                   size="1.5rem"
                   className="tel:w-full lg:h-auto text-light-green tel:mb-3"
                 />
-                <span className="tel:w-full font-medium tel:text-sm text-gray-600 lg:pl-4 hover:text-light-green">
+                <span className="tel:w-full font-medium tel:text-sm text-gray-600 lg:pl-4 hover:text-light-green dark:text-white dark:hover:text-light-green">
                   bardosrichard99
                 </span>
               </div>
@@ -75,7 +75,7 @@ function Contact() {
                 size="1.5rem"
                 className="tel:w-full lg:h-auto text-light-green tel:mb-3"
               />
-              <span className="tel:w-full font-medium tel:text-sm text-gray-600 lg:pl-4">
+              <span className="tel:w-full font-medium tel:text-sm text-gray-600 lg:pl-4 dark:text-white">
               {lang("status")}
               </span>
             </div>

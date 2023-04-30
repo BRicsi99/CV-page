@@ -14,13 +14,13 @@ function MainComponentBio() {
 
   return (
     <Fragment>
-      <div className="h-144 tel:hidden lg:w-4/12 bg-white lg:rounded-lg">
+      <div className="h-144 tel:hidden lg:w-4/12 bg-white lg:rounded-lg dark:bg-gray-700">
         <img
           src="images/DSC_5579_resized2.jpg"
           className="rounded-none lg:rounded-t-lg shadow-2xl hidden lg:block"
         />
         <div>
-          <h1 className="text-3xl pt-8 lg:pt-0 mt-5 text-center fade-in-out">
+          <h1 className="text-3xl pt-8 lg:pt-0 mt-5 text-center fade-in-out dark:text-white">
             {lang("name")}
           </h1>
           <p className="text-1xl pt-8 lg:pt-0 my-3 text-center text-light-green font-medium">
@@ -35,7 +35,7 @@ function MainComponentBio() {
             >
               <FaGithub
                 size="2rem"
-                className="h-6 fill-current text-gray-600 hover:text-green-700"
+                className="h-6 fill-current text-gray-600 dark:text-white hover:text-green-700 dark:hover:text-green-700"
               />
             </a>
             <a
@@ -45,7 +45,7 @@ function MainComponentBio() {
             >
               <AiFillGitlab
                 size="2rem"
-                className="h-6 fill-current text-gray-600 hover:text-green-700"
+                className="h-6 fill-current text-gray-600 dark:text-white hover:text-green-700 dark:hover:text-green-700"
               />
             </a>
             <a
@@ -55,7 +55,7 @@ function MainComponentBio() {
             >
               <FaLinkedin
                 size="2rem"
-                className="h-6 fill-current text-gray-600 hover:text-green-700"
+                className="h-6 fill-current text-gray-600 dark:text-white hover:text-green-700 dark:hover:text-green-700"
               />
             </a>
           </div>
@@ -66,18 +66,18 @@ function MainComponentBio() {
                 e.preventDefault();
                 window.location.href = "/files/RichardBardos_CV_en_202303.pdf";
               }}
-              className="relative inline-flex p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800"
+              className="relative inline-flex p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-700 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800"
             >
-              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-700 rounded-md group-hover:bg-opacity-0">
                 {lang("cv")}
               </span>
             </button>
             <button
               id="Contact.jsx"
               onClick={onPageChange}
-              className="relative inline-flex p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800"
+              className="relative inline-flex p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-700 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800"
             >
-              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-700 rounded-md group-hover:bg-opacity-0">
               {lang("contact")}
               </span>
             </button>

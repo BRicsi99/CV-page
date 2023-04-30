@@ -1,25 +1,16 @@
-@tailwind base{
-    .beach {
-        @apply background-image: url('/images/beach2.jpg');
-        @apply dark:background-image: url('/images/sunset.jpg');
-    }
-};
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* .beach{
+.beach{
     background-image: url('/images/beach2.jpg');
+}
+.dark{
+    background-image: url('/images/sunset.jpg');    
+}
+.backgrd{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;  
     background-attachment: fixed;
-}*/
-.sunset{
-    background-image: url('/images/beach2.jpg');
-    /*dark:background-image: url('/images/sunset.jpg');*/
-    
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;  
-    background-attachment: fixed;
-} 
+}

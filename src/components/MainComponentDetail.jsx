@@ -27,7 +27,7 @@ function MainComponentDetail() {
               backgroundImage: `url('images/DSC_5579_phone.jpg')`,
             }}
           ></div>
-          <h1 className="text-3xl pt-4 text-center fade-in-out">
+          <h1 className="text-3xl pt-4 text-center fade-in-out dark:text-white">
             Bárdos Richárd
           </h1>
           <p className="text-1xl my-3 text-center text-light-green font-medium">
@@ -41,7 +41,7 @@ function MainComponentDetail() {
             >
               <FaGithub
                 size="2rem"
-                className="h-6 fill-current text-gray-600 hover:text-green-700"
+                className="h-6 fill-current text-gray-600 dark:text-white hover:text-green-700 dark:hover:text-green-700"
               />
             </a>
             <a
@@ -51,7 +51,7 @@ function MainComponentDetail() {
             >
               <AiFillGitlab
                 size="2rem"
-                className="h-6 fill-current text-gray-600 hover:text-green-700"
+                className="h-6 fill-current text-gray-600 dark:text-white hover:text-green-700 dark:hover:text-green-700"
               />
             </a>
             <a
@@ -61,7 +61,7 @@ function MainComponentDetail() {
             >
               <FaLinkedin
                 size="2rem"
-                className="h-6 fill-current text-gray-600 hover:text-green-700"
+                className="h-6 fill-current text-gray-600 dark:text-white hover:text-green-700 dark:hover:text-green-700"
               />
             </a>
           </div>

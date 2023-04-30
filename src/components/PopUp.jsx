@@ -37,15 +37,15 @@ function PopUp() {
               <img
                 id="modal-img"
                 src={src}
-                className="object-cover object-top lg:h-full w-full rounded-md border shadow"
+                className="object-cover object-top lg:h-full w-full rounded-md border shadow dark:border-black"
               />
             </a>
           </div>
 
           <div className="lg:w-1/2 tel:w-full lg:pl-2">
-            <div className="mb-2 h-full lg:p-6 tel:p-3 rounded-md card bg-white border border-gray-200 hover:bg-light-green-250 shadow text-black">
+            <div className="mb-2 h-full lg:p-6 tel:p-3 rounded-md card bg-white dark:bg-gray-700 border border-gray-200 hover:bg-light-green-250 shadow text-black dark:border-black">
               <div>
-                <h3 className="lg:mb-2 lg:text-2xl tel:text-xl font-semibold">
+                <h3 className="lg:mb-2 lg:text-2xl tel:text-xl font-semibold dark:text-white">
                   {title}
                 </h3>
                 <div className="mx-auto lg:mx-0 w-4/5 my-5 border-b-2 border-green-500 opacity-25"></div>
@@ -61,7 +61,7 @@ function PopUp() {
                     >
                       <FaLink
                         size="1.7rem"
-                        className="h-10 fill-current text-gray-600 hover:text-green-700"
+                        className="h-10 fill-current text-gray-600 hover:text-green-700 dark:text-white dark:hover:text-green-700"
                       />
                     </a>
                     <a
@@ -71,19 +71,19 @@ function PopUp() {
                     >
                       <AiFillGitlab
                         size="2rem"
-                        className="h-10 fill-current text-gray-600 hover:text-green-700"
+                        className="h-10 fill-current text-gray-600 hover:text-green-700 dark:text-white dark:hover:text-green-700"
                       />
                     </a>
                   </div>
 
                   <div className="tel:w-1/2 flex tel:flex-wrap tel:gap-y-4 tel:content-center">
                     <div className="lg:mr-3 tel:w-1/2 tel:text-center">
-                      <span className="bg-orange-100 text-orange-800 text-xs font-medium lg:mr-2 px-2.5 py-1 rounded-full dark:bg-green-900 dark:text-green-300">
+                      <span className="bg-orange-100 text-orange-800 text-xs font-medium lg:mr-2 px-2.5 py-1 rounded-full dark:bg-orange-800 dark:text-white">
                         {progress ? lang("ongoing") : lang("done")}
                       </span>
                     </div>
                     <div className="tel:w-1/2 tel:justify-center">
-                      <span className="pt-1 flex w-14 bg-blue-100 text-blue-800 text-xs font-medium lg:mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-blue-300">
+                      <span className="pt-1 flex w-14 bg-blue-100 text-blue-800 text-xs font-medium lg:mr-2 px-2.5 py-0.5 rounded-full dark:bg-blue-900 dark:text-white">
                         <FaEye size="1.1rem" className="mr-2 " />
                         {4}
                       </span>

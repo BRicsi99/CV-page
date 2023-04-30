@@ -27,9 +27,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main
-        className={`font-sans antialiased h-screen text-gray-900 leading-normal tracking-wider ${
-          currentTheme == "light" ? "beach" : "sunset"
-        }`}
+        className={`font-sans antialiased h-screen text-gray-900 leading-normal tracking-wider`}
       >
         <div
           id="profile"

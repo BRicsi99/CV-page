@@ -14,7 +14,7 @@ function Resume() {
 
       <div className="flex mb-10">
         <div className="w-1/2 pt-4 lg:pr-6 tel:pr-2 border-r-4 border-light-green-250">
-          <h1 className="lg:text-2xl tel:text-xl font-semibold pt-8 lg:pt-0">
+          <h1 className="lg:text-2xl tel:text-xl font-semibold pt-8 lg:pt-0 dark:text-white">
             {lang("experience_title")}
           </h1>
           <div className="w-full">
@@ -22,23 +22,23 @@ function Resume() {
             <span className="text-sm text-light-green border border-light-green rounded-md px-1">
               {lang("exp1_time")}
             </span>
-            <h2 className="font-medium pt-2">{lang("exp1_ttl")}</h2>
+            <h2 className="font-medium pt-2 dark:text-white">{lang("exp1_ttl")}</h2>
             <h4 className="text-sm text-gray-400">{lang("exp1_place")}</h4>
-            <p className="text-sm pt-3">{lang("exp1_dsc")}</p>
+            <p className="text-sm pt-3 dark:text-white">{lang("exp1_dsc")}</p>
           </div>
           <div className="w-full">
             <hr className="my-5 w-1/2 border-light-green opacity-25" />
             <span className="text-sm text-gray-400 border border-gray-400 rounded-md px-1">
               {lang("exp2_time")}
             </span>
-            <h2 className="font-medium pt-2">{lang("exp2_ttl")}</h2>
+            <h2 className="font-medium pt-2 dark:text-white">{lang("exp2_ttl")}</h2>
             <h4 className="text-sm text-gray-400">{lang("exp2_place")}</h4>
-            <p className="text-sm pt-3">{lang("exp2_dsc")}</p>
+            <p className="text-sm pt-3 dark:text-white">{lang("exp2_dsc")}</p>
           </div>
         </div>
 
         <div className="w-1/2 pt-4 lg:pl-6 tel:pl-2">
-          <h1 className="lg:text-2xl tel:text-xl font-semibold pt-8 lg:pt-0">
+          <h1 className="lg:text-2xl tel:text-xl font-semibold pt-8 lg:pt-0 dark:text-white">
             {lang("education_title")}
           </h1>
           <div className="w-full">
@@ -46,18 +46,18 @@ function Resume() {
             <span className="text-sm text-light-green border border-light-green rounded-md px-1">
               {lang("edu1_time")}
             </span>
-            <h2 className="font-medium pt-2">{lang("edu1_ttl")}</h2>
+            <h2 className="font-medium pt-2 dark:text-white">{lang("edu1_ttl")}</h2>
             <h4 className="text-sm text-gray-400">{lang("edu1_place")}</h4>
-            <p className="text-sm pt-3">{lang("edu1_dsc")}</p>
+            <p className="text-sm pt-3 dark:text-white">{lang("edu1_dsc")}</p>
           </div>
           <div className="w-full">
             <hr className="my-5 w-1/2 border-light-green opacity-25" />
             <span className="text-sm text-gray-400 border border-gray-400 rounded-md px-1">
               {lang("edu2_time")}
             </span>
-            <h2 className="font-medium pt-2">{lang("edu2_ttl")}</h2>
+            <h2 className="font-medium pt-2 dark:text-white">{lang("edu2_ttl")}</h2>
             <h4 className="text-sm text-gray-400">{lang("edu2_place")}</h4>
-            <p className="text-sm pt-3">{lang("edu2_dsc")}</p>
+            <p className="text-sm pt-3 dark:text-white">{lang("edu2_dsc")}</p>
           </div>
         </div>
       </div>
@@ -67,7 +67,7 @@ function Resume() {
       </h1>
       <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
 
-      <div className="flex mb-10">
+      <div className="flex mb-10 dark:text-white">
         <div className="w-1/2 pt-4 lg:pr-6 tel:pr-2 border-r-4 border-light-green-250">
           <h1 className="lg:text-2xl tel:text-xl font-semibold pt-8 lg:pt-0">
             {lang("dev_title")}
@@ -99,63 +99,63 @@ function Resume() {
           </div>
         </div>
 
-        <div className="w-1/2 pt-4 lg:pl-6 tel:pl-2">
+        <div className="w-1/2 pt-4 lg:pl-6 tel:pl-2 dark:text-white">
           <h1 className="lg:text-2xl tel:text-xl font-semibold pt-8 lg:pt-0">
             {lang("platforms_title")}
           </h1>
           <div className="w-full tel:text-center">
             <hr className="my-5 w-1/2 border-light-green opacity-25" />
-            <div className="flex mb-2 tel:justify-center">
+            <div className="flex mb-2 tel:justify-center tel:mb-4">
               <TiTick
                 size="1.5rem"
                 className="tel:hidden h-auto text-light-green"
               />
-              <span className="font-medium tel:text-sm text-gray-600 lg:pl-4">
+              <span className="font-medium tel:text-sm text-gray-600 lg:pl-4 dark:text-white">
                 Wordpress, WooCommerce
               </span>
             </div>
-            <div className="flex mb-2 tel:justify-center">
+            <div className="flex mb-2 tel:justify-center tel:mb-4">
               <TiTick
                 size="1.5rem"
                 className="tel:hidden h-auto text-light-green"
               />
-              <span className="font-medium tel:text-sm text-gray-600 lg:pl-4">
+              <span className="font-medium tel:text-sm text-gray-600 lg:pl-4 dark:text-white">
                 Visual Studio Code
               </span>
             </div>
-            <div className="flex mb-2 tel:justify-center">
+            <div className="flex mb-2 tel:justify-center tel:mb-4">
               <TiTick
                 size="1.5rem"
                 className="tel:hidden h-auto text-light-green"
               />
-              <span className="font-medium tel:text-sm text-gray-600 lg:pl-4">
+              <span className="font-medium tel:text-sm text-gray-600 lg:pl-4 dark:text-white">
                 GitLab, GitHub, BitBucket
               </span>
             </div>
-            <div className="flex mb-2 tel:justify-center">
+            <div className="flex mb-2 tel:justify-center tel:mb-4">
               <TiTick
                 size="1.5rem"
                 className="tel:hidden h-auto text-light-green"
               />
-              <span className="font-medium tel:text-sm text-gray-600 lg:pl-4">
+              <span className="font-medium tel:text-sm text-gray-600 lg:pl-4 dark:text-white">
                 Jira, YouTrack
               </span>
             </div>
-            <div className="flex mb-2 tel:justify-center">
+            <div className="flex mb-2 tel:justify-center tel:mb-4">
               <TiTick
                 size="1.5rem"
                 className="tel:hidden h-auto text-light-green"
               />
-              <span className="font-medium tel:text-sm text-gray-600 lg:pl-4">
+              <span className="font-medium tel:text-sm text-gray-600 lg:pl-4 dark:text-white">
                 AWS, Azure
               </span>
             </div>
-            <div className="flex mb-2 tel:justify-center">
+            <div className="flex mb-2 tel:justify-center tel:mb-4">
               <TiTick
                 size="1.5rem"
                 className="tel:hidden h-auto text-light-green"
               />
-              <span className="font-medium tel:text-sm text-gray-600 lg:pl-4">
+              <span className="font-medium tel:text-sm text-gray-600 lg:pl-4 dark:text-white">
                 Notion, Slack, Hubspot
               </span>
             </div>
@@ -163,7 +163,7 @@ function Resume() {
         </div>
       </div>
 
-      <div className="flex mb-10">
+      <div className="flex mb-10 dark:text-white">
         <div className="w-full">
           <h1 className="text-2xl font-semibold lg:pt-0">{lang("language_title")}</h1>
           <div className="w-full">
