@@ -25,6 +25,8 @@ module.exports = {
       screens: {
         'tel': {'max': '1023px'},
         // => @media (max-width: 1023px) { ... }
+        'tall': { 'raw': '(max-height: 800px)' },
+        // => @media (min-height: 800px) { ... }
       },
     }
   },

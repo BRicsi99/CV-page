@@ -32,7 +32,7 @@ function PopUp() {
         </div>
 
         <div className="flex tel:flex-wrap tel:w-full lg:p-6 tel:p-3">
-          <div className="lg:w-1/2 tel:w-full lg:pr-2 tel:px-10 tel:pb-3 lg:h-144">
+          <div className="lg:w-1/2 tel:w-full lg:pr-2 tel:px-10 tel:pb-3 lg:h-144 tall:lg:h-128">
             <a href={url} target="_blank">
               <img
                 id="modal-img"
