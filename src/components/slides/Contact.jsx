@@ -11,6 +11,18 @@ import { useTranslations } from "next-intl";
 function Contact() {
   const lang = useTranslations("Contact");
 
+  const handleSubmit = async (event) => {
+    event.preventDefault()
+
+    const data = {
+      name: event.target.name.value,
+      email: event.target.email.value,
+      message: event.target.message.value,
+    }
+ 
+    alert(`Your full name: ${data.name}\nEmail address: ${data.email}\nYour message: ${data.message}`)
+  }
+
   return (
     <div>
       <h1 className="text-3xl font-bold pt-8 lg:pt-0 text-light-green">
@@ -76,7 +88,7 @@ function Contact() {
                 className="tel:w-full lg:h-auto text-light-green tel:mb-3"
               />
               <span className="tel:w-full font-medium tel:text-sm text-gray-600 lg:pl-4 dark:text-white">
-              {lang("status")}
+                {lang("status")}
               </span>
             </div>
           </div>
@@ -84,12 +96,17 @@ function Contact() {
       </div>
 
       <h1 className="text-3xl font-bold pt-8 lg:pt-0 text-light-green">
-      {lang("writeme")}
+        {lang("writeme")}
       </h1>
       <div className="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25"></div>
 
       <div className="lg:mb-10">
-        <form className="my-5 flex flex-wrap">
+        <form
+          className="my-5 flex flex-wrap"
+          action="/api/form"
+          method="post"
+          onSubmit={handleSubmit}
+        >
           <div className="lg:w-1/2 tel:w-full lg:pr-2 tel:mb-4">
             <div className="relative">
               <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -97,7 +114,7 @@ function Contact() {
               </div>
               <input
                 type="text"
-                id="email-address-icon"
+                id="name" name="name"
                 className="w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder={lang("ph_name")}
               />
@@ -109,8 +126,8 @@ function Contact() {
                 <BsFillEnvelopeFill className="text-light-green" />
               </div>
               <input
-                type="text"
-                id="email-address-icon"
+                type="email"
+                id="email" name="email"
                 className="w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder={lang("ph_email")}
               />
@@ -119,13 +136,22 @@ function Contact() {
           <div className="w-full pt-4">
             <div className="relative">
               <textarea
-                id="message"
+                id="message" name="message"
                 rows="4"
                 className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder={lang("ph_message")}
               ></textarea>
             </div>
           </div>
+          <button
+            type="submit"
+            className="inline-flex p-0.5 my-2 overflow-hidden text-sm font-medium text-gray-700 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-lime-800"
+          >
+            {" "}
+            <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-700 rounded-md group-hover:bg-opacity-0">
+              {lang("submit")}
+            </span>
+          </button>
         </form>
       </div>
     </div>

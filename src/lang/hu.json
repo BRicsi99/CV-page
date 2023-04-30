@@ -80,7 +80,8 @@
     "writeme": "Írj nekem",
     "ph_name": "Teljes név",
     "ph_email": "Email cím",
-    "ph_message": "Üzeneted"
+    "ph_message": "Üzeneted",
+    "submit": "Küldés"
   },
   "PopUp": {
     "title": "Project leírás",

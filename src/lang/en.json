@@ -80,7 +80,8 @@
     "writeme": "Contact Me",
     "ph_name": "Full name",
     "ph_email": "E-mail address",
-    "ph_message": "Your message"
+    "ph_message": "Your message",
+    "submit": "Submit"
   },
   "PopUp": {
     "title": "Project description",
